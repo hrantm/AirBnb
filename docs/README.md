@@ -18,5 +18,8 @@ Bonus Features
 
 Design Docs
 
-[Wireframes](/wireframes)
-[api-endpoints](/api-endpoints)
+* [Wireframes](/docs/wireframes)
+* [React Components Hierarchy](/docs/component-hierarchy.md)
+* [Sample State](/docs/sample-state.md)
+* [Redux Structure](/docs/redux-structure.md)
+* [DB Schema](/docs/schema.md)
