@@ -21,5 +21,5 @@ Design Docs
 * [Wireframes](/docs/wireframes)
 * [React Components Hierarchy](/docs/component-hierarchy.md)
 * [Sample State](/docs/sample-state.md)
-* [Redux Structure](/docs/redux-structure.md)
+* [Api Endpoints](/docs/api-endpoints.md)
 * [DB Schema](/docs/schema.md)
