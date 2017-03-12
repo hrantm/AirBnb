@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Heroku Link
 
-Things you may want to cover:
 
-* Ruby version
+Key Features
 
-* System dependencies
+- Spots
+- Bookings
+- Spots search (by location & availability) & Google Maps on search
+- Reviews
 
-* Configuration
+Bonus Features
 
-* Database creation
+- Messaging
+- User/host profiles
 
-* Database initialization
 
-* How to run the test suite
+Design Docs
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Wireframes](/wireframes)
