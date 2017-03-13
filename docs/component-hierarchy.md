@@ -11,9 +11,9 @@
           - SessionSignUp
 **HomeContainer**
  - Home
-  <!-- - FeaturedSpotsContainer
+  - FeaturedSpotsContainer
     - FeaturedSpots
-      - FeaturedSpotDetail -->
+      - FeaturedSpotDetail
   - SearchBar
 
 **SearchContainer**
@@ -43,4 +43,5 @@
 | "/search" | "SearchContainer" |
 | "/spots/:spotId" | "SpotContainer" |
 | "/bookings" | "BookingsContainer" |
-AIzaSyCAu82wym607CAodEPa-NoX6ii6BkKh6AI
+
+<!-- AIzaSyCAu82wym607CAodEPa-NoX6ii6BkKh6AI -->

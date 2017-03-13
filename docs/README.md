@@ -44,10 +44,10 @@ AirBnB clone for office space.
 **Objective:** Functioning search bar on homepage that links to search page.
 Interactive Google map mirrors search results.
 
-### Phase IV: Bookings model (1 day)
+### Phase IV: Bookings model (2 day)
 
-**Objective:** Bookings belong to spots and users and can be created, read, and destroyed. 
+**Objective:** Bookings belong to spots and users and can be created, read, and destroyed.
 
-### Phase V: Reviews model (1 day)
+### Phase V: Reviews model (2 day)
 
 **Objective:** Users can leave reviews and rate spots. Reviews and ratings appear on spot detail page and can be created, read, updated, and destroyed.
