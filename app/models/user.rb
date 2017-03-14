@@ -18,7 +18,7 @@ class User < ApplicationRecord
   def reset_session_token!
     self.session_token = User.generate_session_token
     self.save!
-    self
+    self.session_token
   end
 
   def password=(password)
