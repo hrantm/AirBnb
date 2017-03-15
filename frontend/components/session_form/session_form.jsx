@@ -2,7 +2,7 @@ import React from 'react';
 import {hashHistory, Link} from 'react-router';
 import Modal from 'react-modal';
 
-// Modal.setAppElement("#root");
+Modal.setAppElement("#root");
 
 
 class SessionForm extends React.Component {
@@ -12,22 +12,22 @@ class SessionForm extends React.Component {
           email: "",
           password: "",
           fname: "",
-          lname: "",
-      };
+          lname: ""
+        };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.formatErrors = this.formatErrors.bind(this);
-    // this.openModal = this.openModal.bind(this);
-    // this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
-//Modal Code
-  // openModal(){
-  //   this.setState({modalIsOpen: true});
-  // }
-  //
-  // closeModal(){
-  //   this.setState({modalIsOpen: false});
-  // }
+// Modal Code
+  openModal(){
+    this.setState({modalIsOpen: true});
+  }
+
+  closeModal(){
+    this.setState({modalIsOpen: false});
+  }
 
 //Add to body Tag to stop scroll on body
 //   .ReactModal__Body--open {
@@ -38,7 +38,12 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
   e.preventDefault();
   const user = Object.assign({}, this.state);
-  this.props.processForm(user).then(() => this.redirect());
+  // this.props.processForm(user).then(() => this.redirect());
+  if (this.props.formType === 'login') {
+    this.props.login(user);
+  }else if (this.props.formType === 'signup') {
+    this.props.signup(user);
+  }
 }
 
   redirect(){
@@ -91,8 +96,8 @@ addFields(){
 
 
   render(){
-
     return (
+      <Modal isOpen={this.props.modalIsOpen} contentLabel='Modal'>
         <form onSubmit= {this.handleSubmit}>
           <h2>{this.props.formType}</h2>
             {this.formatErrors()}
@@ -111,6 +116,7 @@ addFields(){
           <br />
           {this.addLink()}
         </form>
+      </Modal>
   );
   }
 }

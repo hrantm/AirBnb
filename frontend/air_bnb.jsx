@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import * as APIUtils from './util/session_api_util.js';
 import configureStore from './store/store.js';
 import Root from './components/root';
+import Modal from 'react-modal';
 //
 // document.addEventListener('DOMContentLoaded', () => {
 //   const store = configureStore();
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       store = configureStore();
     }
+    Modal.setAppElement(document.body);
     ReactDOM.render(<Root store={store}/>, root);
     window.store = store;
 });
