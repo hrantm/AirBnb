@@ -20,6 +20,7 @@ export const signout = () => dispatch => (
     .then(user => dispatch(receiveCurrentUser(null)))
 );
 
+
 //SYNC
 
 export const receiveCurrentUser = currentUser => ({
