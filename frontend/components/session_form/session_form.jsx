@@ -2,8 +2,33 @@ import React from 'react';
 import {hashHistory, Link} from 'react-router';
 import Modal from 'react-modal';
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
+const modStyle = {
+  overlay : {
+    position          : 'fixed',
+    top               : 0,
+    left              : 0,
+    right             : 0,
+    bottom            : 0,
+    backgroundColor   : 'rgba(0, 0, 0, 0.75)'
+  },
+  content : {
+    position                   : 'absolute',
+    top                        : '40px',
+    left                       : '400px',
+    right                      : '400px',
+    bottom                     : '200px',
+    border                     : '1px solid #ccc',
+    background                 : '#fff',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '4px',
+    outline                    : 'none',
+    padding                    : '20px'
+
+  }
+};
 
 class SessionForm extends React.Component {
   constructor(props) {
@@ -99,7 +124,8 @@ addFields(){
     return (
       <Modal
         isOpen={this.props.modalIsOpen} contentLabel='Modal'
-        onRequestClose={this.props.toggleModal}>
+        onRequestClose={this.props.toggleModal}
+        style={modStyle}>
         <form onSubmit= {this.handleSubmit}>
           <h2>{this.props.formType}</h2>
           {this.formatErrors()}
