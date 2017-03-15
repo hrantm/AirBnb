@@ -7,7 +7,16 @@ const sessionLinks = () => (
     <br/>
     <Link to='/login'>Log In</Link>
   </div>
+  // <div>
+  //   <button onClick={toggleSessionForm('Signup')}>Sign Up</button>
+  //   <br/>
+  //   <button onClick={toggleSessionForm('Login')}>Log In</button>
+  // </div>
 );
+
+// const toggleSessionForm = (type) => () => (
+//
+// );
 
 const personalGreeting = (currentUser, signout) => {
   return(

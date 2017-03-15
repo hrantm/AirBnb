@@ -1,5 +1,8 @@
 import React from 'react';
 import {hashHistory, Link} from 'react-router';
+import Modal from 'react-modal';
+
+// Modal.setAppElement("#root");
 
 
 class SessionForm extends React.Component {
@@ -9,11 +12,29 @@ class SessionForm extends React.Component {
           email: "",
           password: "",
           fname: "",
-          lname: ""
+          lname: "",
       };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.formatErrors = this.formatErrors.bind(this);
+    // this.openModal = this.openModal.bind(this);
+    // this.closeModal = this.closeModal.bind(this);
   }
 
+//Modal Code
+  // openModal(){
+  //   this.setState({modalIsOpen: true});
+  // }
+  //
+  // closeModal(){
+  //   this.setState({modalIsOpen: false});
+  // }
+
+//Add to body Tag to stop scroll on body
+//   .ReactModal__Body--open {
+//     overflow: hidden;
+// }
+
+//End Of Modal code
   handleSubmit(e) {
   e.preventDefault();
   const user = Object.assign({}, this.state);
@@ -58,26 +79,38 @@ addFields(){
   }
 }
 
+  formatErrors(){
+    if (this.props.errors.length > 0) {
+      return(
+        this.props.errors.map(error => (
+          <li>{error}</li>
+        ))
+      );
+    }
+  }
+
+
   render(){
 
     return (
-    <form onSubmit= {this.handleSubmit}>
-      <h2>{this.props.formType}</h2>
-      <label>
-        Email
-        <input type='text' onChange={this.update('email')}/>
-      </label>
-      <label>
-        Password
-        <input type='password' onChange={this.update('password')}/>
-      </label>
-      <br />
-      {this.addFields()}
+        <form onSubmit= {this.handleSubmit}>
+          <h2>{this.props.formType}</h2>
+            {this.formatErrors()}
+          <label>
+            Email
+            <input type='text' onChange={this.update('email')}/>
+          </label>
+          <label>
+            Password
+            <input type='password' onChange={this.update('password')}/>
+          </label>
+          <br />
+          {this.addFields()}
 
-      <input type='submit'/>
-      <br />
-      {this.addLink()}
-    </form>
+          <input type='submit'/>
+          <br />
+          {this.addLink()}
+        </form>
   );
   }
 }
