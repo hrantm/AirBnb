@@ -40,14 +40,20 @@ class SessionForm extends React.Component {
   const user = Object.assign({}, this.state);
   // this.props.processForm(user).then(() => this.redirect());
   if (this.props.formType === 'login') {
-    this.props.login(user);
+    // this.props.toggleModal('login');
+    this.props.login(user).then(() => {
+      this.props.toggleModal('login');
+      console.log('success');
+      this.redirect();
+    });
   }else if (this.props.formType === 'signup') {
-    this.props.signup(user);
+    // this.props.toggleModal('signup');
+    this.props.signup(user).then(this.props.toggleModal.bind(this, 'signup')).then(this.redirect);
   }
 }
 
   redirect(){
-    hashHistory.push('/');
+    hashHistory.push('/profile');
   }
 
 addLink(){
@@ -100,7 +106,7 @@ addFields(){
       <Modal isOpen={this.props.modalIsOpen} contentLabel='Modal'>
         <form onSubmit= {this.handleSubmit}>
           <h2>{this.props.formType}</h2>
-            {this.formatErrors()}
+          {this.formatErrors()}
           <label>
             Email
             <input type='text' onChange={this.update('email')}/>
