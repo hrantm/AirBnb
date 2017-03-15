@@ -29,11 +29,6 @@ class SessionForm extends React.Component {
     this.setState({modalIsOpen: false});
   }
 
-//Add to body Tag to stop scroll on body
-//   .ReactModal__Body--open {
-//     overflow: hidden;
-// }
-
 //End Of Modal code
   handleSubmit(e) {
   e.preventDefault();
@@ -102,7 +97,9 @@ addFields(){
 
   render(){
     return (
-      <Modal isOpen={this.props.modalIsOpen} contentLabel='Modal'>
+      <Modal
+        isOpen={this.props.modalIsOpen} contentLabel='Modal'
+        onRequestClose={this.props.toggleModal}>
         <form onSubmit= {this.handleSubmit}>
           <h2>{this.props.formType}</h2>
           {this.formatErrors()}
