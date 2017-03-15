@@ -46,11 +46,11 @@ addFields(){
       [
     <label>
       First Name
-      <input type='text' onChange={this.update('fname')}/>
+      <input key='first' type='text' onChange={this.update('fname')}/>
     </label>,
     <label>
        Last Name
-      <input type='text' onChange={this.update('lname')}/>
+      <input key='second'type='text' onChange={this.update('lname')}/>
     </label>
     ]
   );
