@@ -1,0 +1,26 @@
+.office-img {
+    position: relative;
+    display: flex;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.image-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.feature-title {
+  font-weight: normal;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.office-li {
+  overflow: hidden;
+  flex: 0.33 0.33 33%;
+}

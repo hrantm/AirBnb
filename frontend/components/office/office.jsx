@@ -13,9 +13,10 @@ class Office extends React.Component {
     console.log(this.props.offices);
     return(
       <div>
-        <ul>
+        <h3 className='feature-title'>Featured Offices</h3>
+        <ul className='image-list'>
         {this.props.offices.map(office => (
-          <li><img src={office.image_url}/></li>
+          <li className='office-li'><img className='office-img' src={office.image_url}/></li>
         ))}
       </ul>
       </div>
