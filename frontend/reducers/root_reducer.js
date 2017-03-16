@@ -2,10 +2,12 @@ import { combineReducers } from 'redux';
 
 import SessionReducer from './session_reducer';
 import ModalReducer from './modal_reducer';
+import OfficeReducer from './office_reducer';
 
 const rootReducer = combineReducers({
   session: SessionReducer,
-  modal: ModalReducer
+  modal: ModalReducer,
+  offices: OfficeReducer
 });
 
 export default rootReducer;
