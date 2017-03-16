@@ -13,9 +13,11 @@ class Office extends React.Component {
     console.log(this.props.offices);
     return(
       <div>
+        <ul>
         {this.props.offices.map(office => (
-          <h1>{office.id}</h1>
+          <li><img src={office.image_url}/></li>
         ))}
+      </ul>
       </div>
     );
   }
