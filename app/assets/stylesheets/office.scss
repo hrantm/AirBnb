@@ -12,6 +12,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 900px;
+  min-width: 500px;
 }
 
 .feature-title {
@@ -22,5 +23,10 @@
 
 .office-li {
   overflow: hidden;
-  flex: 0.33 0.33 33%;
+  flex: 0.30 0.30 30%;
+  margin: 5px;
+}
+
+.office-price {
+  padding: 5px;
 }
