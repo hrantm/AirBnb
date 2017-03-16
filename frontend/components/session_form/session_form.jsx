@@ -202,9 +202,8 @@ addFields(){
             className='form-submit-input'
             type='submit'
             value={this.submitButtonText()}/>
-          <br />
-          {this.switchForm()}
         </form>
+        {this.switchForm()}
       </Modal>
   );
   }
