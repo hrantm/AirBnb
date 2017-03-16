@@ -88,3 +88,14 @@ button {
   color: grey;
   font-size: 18px;
 }
+
+.switchModalText {
+  font-weight: normal;
+}
+
+.switchModal {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}

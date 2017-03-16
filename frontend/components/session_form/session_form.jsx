@@ -149,17 +149,19 @@ addFields(){
 
   switchForm(){
     if (this.props.formType === 'login') {
+      // this.props.clearErrors();
       return(
-        <div>
-          <h5>Don't have an account?</h5>
+        <div className='switchModal'>
+          <h5 className='switchModalText'>Don't have an account?</h5>
           <button onClick={this.renderSignUp}>Sign Up</button>
         </div>
       );
     }else if (this.props.formType === 'signup') {
+      // this.props.clearErrors();
       return(
-        <div>
-          <h5>Already have an account?</h5>
-          <button onClick={this.renderLogin}>Sign Up</button>
+        <div className='switchModal'>
+          <h5 className='switchModalText'>Already have an account?</h5>
+          <button onClick={this.renderLogin}>Log In</button>
         </div>
       );
     }
@@ -173,7 +175,9 @@ addFields(){
         style={modStyle}>
         <form className='login-form' onSubmit= {this.handleSubmit}>
           {this.renderTitle()}
-          {this.formatErrors()}
+          <ul>
+            {this.formatErrors()}
+          </ul>
             <input className='input-field'
               type='text' onChange={this.update('email')}
               placeholder="Email"/>

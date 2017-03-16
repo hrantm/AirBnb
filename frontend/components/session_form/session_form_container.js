@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { login, logout, signup } from '../../actions/session_actions';
+import { login, logout, signup, receiveErrors } from '../../actions/session_actions';
 import { toggleModal } from '../../actions/modal_actions';
 import SessionForm from './session_form';
 
@@ -15,7 +15,8 @@ const mapDispatchToProps = (dispatch) => {
   return ({
     login: user => dispatch(login(user)),
     signup: user => dispatch(signup(user)),
-    toggleModal: type => dispatch(toggleModal(type))
+    toggleModal: type => dispatch(toggleModal(type)),
+    clearErrors: () => dispatch(receiveErrors([]))
   });
 };
 
