@@ -5,6 +5,11 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, allow_nil: true
   attr_reader :password
 
+  has_many :offices,
+    primary_key: :id,
+    foreign_key: :owner_id,
+    class_name: :Office
+
   def self.generate_session_token
     SecureRandom.urlsafe_base64
   end
