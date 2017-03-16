@@ -139,17 +139,22 @@ addFields(){
 
   renderSignUp(){
     this.props.toggleModal();
+
+    // this.closeModal();
     this.props.toggleModal('signup');
+    this.props.clearErrors();
+
   }
 
   renderLogin(){
     this.props.toggleModal();
+    // this.closeModal();
     this.props.toggleModal('login');
+    this.props.clearErrors();
   }
 
   switchForm(){
     if (this.props.formType === 'login') {
-      // this.props.clearErrors();
       return(
         <div className='switchModal'>
           <h5 className='switchModalText'>Don't have an account?</h5>
@@ -157,13 +162,20 @@ addFields(){
         </div>
       );
     }else if (this.props.formType === 'signup') {
-      // this.props.clearErrors();
       return(
         <div className='switchModal'>
           <h5 className='switchModalText'>Already have an account?</h5>
           <button onClick={this.renderLogin}>Log In</button>
         </div>
       );
+    }
+  }
+
+  submitButtonText(){
+    if (this.props.formType === 'login') {
+      return 'Log In';
+    }else if (this.props.formType === 'signup') {
+      return 'Sign Up';
     }
   }
 
@@ -188,7 +200,8 @@ addFields(){
 
           <input
             className='form-submit-input'
-            type='submit'/>
+            type='submit'
+            value={this.submitButtonText()}/>
           <br />
           {this.switchForm()}
         </form>
