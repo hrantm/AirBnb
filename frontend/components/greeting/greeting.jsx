@@ -84,10 +84,12 @@ class Greeting extends React.Component {
     // return (currentUser ? this.personalGreeting(currentUser, signout) : this.sessionLinks());
     // return (currentUser ? this.personalGreeting(currentUser, signout) : this.sessionButtons());
     return (
-      <div>
-        <button onClick={this.toggleSessionForm('signup')}>Sign Up</button>
-        <br/>
-        <button onClick={this.toggleSessionForm('login')}>Log In</button>
+      <div className='main-nav'>
+        <h1 className='logo'>Air BnB</h1>
+        <div className='buttons'>
+          <button onClick={this.toggleSessionForm('signup')}>Sign Up</button>
+          <button onClick={this.toggleSessionForm('login')}>Log In</button>
+        </div>
          <SessionFormContainer/>
       </div>
 

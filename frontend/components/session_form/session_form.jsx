@@ -15,17 +15,17 @@ const modStyle = {
   },
   content : {
     position                   : 'absolute',
-    top                        : '40px',
-    left                       : '400px',
-    right                      : '400px',
-    bottom                     : '200px',
+    top                        : '12%',
+    left                       : '28%',
+    right                      : '28%',
+    bottom                     : '12%',
     border                     : '1px solid #ccc',
     background                 : '#fff',
     overflow                   : 'auto',
     WebkitOverflowScrolling    : 'touch',
     borderRadius               : '4px',
     outline                    : 'none',
-    padding                    : '20px'
+    padding                    : '30px'
 
   }
 };
@@ -95,13 +95,13 @@ addFields(){
   if (this.props.formType === 'signup') {
     return (
       [
-    <label>
+    <label className='input-label'>
       First Name
-      <input key='first' type='text' onChange={this.update('fname')}/>
+      <input className='input-field' key='first' type='text' onChange={this.update('fname')}/>
     </label>,
-    <label>
+    <label className='input-label'>
        Last Name
-      <input key='second'type='text' onChange={this.update('lname')}/>
+      <input className='input-field' key='second'type='text' onChange={this.update('lname')}/>
     </label>
     ]
   );
@@ -126,18 +126,19 @@ addFields(){
         isOpen={this.props.modalIsOpen} contentLabel='Modal'
         onRequestClose={this.props.toggleModal}
         style={modStyle}>
-        <form onSubmit= {this.handleSubmit}>
+        <form className='login-form' onSubmit= {this.handleSubmit}>
           <h2>{this.props.formType}</h2>
           {this.formatErrors()}
-          <label>
+          <label className='input-label'>
             Email
-            <input type='text' onChange={this.update('email')}/>
+            <input className='input-field'
+              type='text' onChange={this.update('email')}
+              placeholder="Email"/>
           </label>
-          <label>
+          <label className='input-label'>
             Password
-            <input type='password' onChange={this.update('password')}/>
+            <input className='input-field' type='password' onChange={this.update('password')}/>
           </label>
-          <br />
           {this.addFields()}
 
           <input type='submit'/>
