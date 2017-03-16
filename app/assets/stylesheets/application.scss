@@ -17,6 +17,11 @@
 
 @import "base/grid.scss";
 
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+   font-weight: 300;
+}
+
 button {
     border: none;
     color: grey;
@@ -43,8 +48,11 @@ button {
 }
 
 .input-field {
-  border: 1px solid grey;
+  border: 1px solid #d3d3d3;
   margin: 5px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 5px;
   display: flex;
 }
 
@@ -59,4 +67,24 @@ button {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.form-submit-input{
+  border: 1px solid #ff7e82;
+  border-color: #ff7e82;
+  background-color: #ff7e82;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+.login-marketing {
+  text-align: left;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 18px;
 }

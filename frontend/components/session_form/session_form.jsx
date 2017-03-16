@@ -16,8 +16,8 @@ const modStyle = {
   content : {
     position                   : 'absolute',
     top                        : '12%',
-    left                       : '28%',
-    right                      : '28%',
+    left                       : '30%',
+    right                      : '30%',
     bottom                     : '12%',
     border                     : '1px solid #ccc',
     background                 : '#fff',
@@ -43,6 +43,10 @@ class SessionForm extends React.Component {
     this.formatErrors = this.formatErrors.bind(this);
     this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.renderTitle = this.renderTitle.bind(this);
+    this.switchForm = this.switchForm.bind(this);
+    this.renderSignUp = this.renderSignUp.bind(this);
+    this.renderLogin = this.renderLogin.bind(this);
   }
 
 // Modal Code
@@ -95,14 +99,14 @@ addFields(){
   if (this.props.formType === 'signup') {
     return (
       [
-    <label className='input-label'>
-      First Name
-      <input className='input-field' key='first' type='text' onChange={this.update('fname')}/>
-    </label>,
-    <label className='input-label'>
-       Last Name
-      <input className='input-field' key='second'type='text' onChange={this.update('lname')}/>
-    </label>
+      <input className='input-field'
+        type='text'
+        onChange={this.update('fname')}
+        placeholder='First Name'/>,
+      <input className='input-field'
+        type='text'
+        onChange={this.update('lname')}
+        placeholder='Last Name'/>
     ]
   );
 
@@ -119,6 +123,47 @@ addFields(){
     }
   }
 
+  renderTitle(){
+    if (this.props.formType === 'signup') {
+      return (
+        <h1 className='login-marketing'>
+          Sign up and join our amazing community!
+        </h1>
+      );
+    }else if (this.props.formType === 'login') {
+      return(
+        <h1 className='login-marketing'>Book a space today!</h1>
+      );
+    }
+  }
+
+  renderSignUp(){
+    this.props.toggleModal();
+    this.props.toggleModal('signup');
+  }
+
+  renderLogin(){
+    this.props.toggleModal();
+    this.props.toggleModal('login');
+  }
+
+  switchForm(){
+    if (this.props.formType === 'login') {
+      return(
+        <div>
+          <h5>Don't have an account?</h5>
+          <button onClick={this.renderSignUp}>Sign Up</button>
+        </div>
+      );
+    }else if (this.props.formType === 'signup') {
+      return(
+        <div>
+          <h5>Already have an account?</h5>
+          <button onClick={this.renderLogin}>Sign Up</button>
+        </div>
+      );
+    }
+  }
 
   render(){
     return (
@@ -127,23 +172,21 @@ addFields(){
         onRequestClose={this.props.toggleModal}
         style={modStyle}>
         <form className='login-form' onSubmit= {this.handleSubmit}>
-          <h2>{this.props.formType}</h2>
+          {this.renderTitle()}
           {this.formatErrors()}
-          <label className='input-label'>
-            Email
             <input className='input-field'
               type='text' onChange={this.update('email')}
               placeholder="Email"/>
-          </label>
-          <label className='input-label'>
-            Password
-            <input className='input-field' type='password' onChange={this.update('password')}/>
-          </label>
+            <input className='input-field'
+              type='password' onChange={this.update('password')}
+              placeholder='Password'/>
           {this.addFields()}
 
-          <input type='submit'/>
+          <input
+            className='form-submit-input'
+            type='submit'/>
           <br />
-          {this.addLink()}
+          {this.switchForm()}
         </form>
       </Modal>
   );
