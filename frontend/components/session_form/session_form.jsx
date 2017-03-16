@@ -67,11 +67,10 @@ class SessionForm extends React.Component {
     // this.props.toggleModal('login');
     this.props.login(user).then(() => {
       this.props.toggleModal('login');
-      this.redirect();
     });
   }else if (this.props.formType === 'signup') {
     // this.props.toggleModal('signup');
-    this.props.signup(user).then(this.props.toggleModal.bind(this, 'signup')).then(this.redirect);
+    this.props.signup(user).then(this.props.toggleModal.bind(this, 'signup'));
   }
 }
 

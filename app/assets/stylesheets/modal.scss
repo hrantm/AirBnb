@@ -1,6 +1,6 @@
 .buttons {
   display: flex;
-  padding: 10px;
+  padding: 5px;
 }
 
 .main-nav {
@@ -63,5 +63,13 @@
   display: flex;
   justify-content: space-between;
   padding-left: 10px;
+  padding-right: 10px;
+}
+
+.profile-name {
+  font-weight: normal;
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
   padding-right: 10px;
 }

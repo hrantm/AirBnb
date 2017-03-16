@@ -2,38 +2,6 @@ import React from 'react';
 import {Link} from 'react-router';
 import SessionFormContainer from '../session_form/session_form_container';
 
-// const sessionLinks = () => (
-//   <div>
-//     <Link to='/signup'>Sign Up</Link>
-//     <br/>
-//     <Link to='/login'>Log In</Link>
-//   </div>
-// );
-//
-// const sessionButtons = () => (
-//   <div>
-//     <button onClick={toggleSessionForm('Signup')}>Sign Up</button>
-//     <br/>
-//     <button onClick={toggleSessionForm('Login')}>Log In</button>
-//   </div>
-// );
-//
-// const toggleSessionForm = (type) => () => (
-//   <SessionFormContainer formType={type}/>
-// );
-//
-// const personalGreeting = (currentUser, signout) => {
-//   return(
-//   <div>
-//     <h3>Welcome {currentUser.email}</h3>
-//     <button onClick={signout}>Signout</button>
-//   </div>
-// );
-// };
-//
-// const Greeting = ({currentUser, signout, modalIsOpen, toggleModal}) => {
-//   return (currentUser ? personalGreeting(currentUser, signout) : session());
-// };
 
 class Greeting extends React.Component {
   constructor(props){
@@ -42,22 +10,18 @@ class Greeting extends React.Component {
     this.toggleSessionForm = this.toggleSessionForm.bind(this);
   }
 
-  sessionLinks(){
-    return(
-    <div>
-      <Link to='/signup'>Sign Up</Link>
-      <br/>
-      <Link to='/login'>Log In</Link>
-    </div>
-  );
-  }
 
-  personalGreeting(currentUser, signout){
-    return(
-    <div>
-      <h3>Welcome {currentUser.email}</h3>
-      <button onClick={signout}>Signout</button>
-    </div>
+  loggedIn(currentUser, signout){
+
+    return (
+      <div className='main-nav'>
+        <h1 className='logo'>Air BnB</h1>
+        <div className='buttons'>
+          <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
+          <button onClick={signout}>Sign Out</button>
+        </div>
+         <SessionFormContainer/>
+      </div>
     );
   }
 
@@ -79,21 +43,34 @@ class Greeting extends React.Component {
     };
   }
 
-  render(){
-    const {currentUser, signout} = this.props;
-    // return (currentUser ? this.personalGreeting(currentUser, signout) : this.sessionLinks());
-    // return (currentUser ? this.personalGreeting(currentUser, signout) : this.sessionButtons());
+  loggedOut(){
     return (
       <div className='main-nav'>
         <h1 className='logo'>Air BnB</h1>
         <div className='buttons'>
-          <button onClick={this.toggleSessionForm('signup')}>Sign Up</button>
-          <button onClick={this.toggleSessionForm('login')}>Log In</button>
+          <button className='buttons' onClick={this.toggleSessionForm('signup')}>Sign Up</button>
+          <button className='buttons' onClick={this.toggleSessionForm('login')}>Log In</button>
         </div>
          <SessionFormContainer/>
       </div>
-
     );
+  }
+
+  render(){
+    const {currentUser, signout} = this.props;
+    // return (currentUser ? this.personalGreeting(currentUser, signout) : this.sessionLinks());
+    return (currentUser ? this.loggedIn(currentUser, signout) : this.loggedOut());
+    // return (
+    //   <div className='main-nav'>
+    //     <h1 className='logo'>Air BnB</h1>
+    //     <div className='buttons'>
+    //       <button onClick={this.toggleSessionForm('signup')}>Sign Up</button>
+    //       <button onClick={this.toggleSessionForm('login')}>Log In</button>
+    //     </div>
+    //      <SessionFormContainer/>
+    //   </div>
+
+    // );
 
   }
 
