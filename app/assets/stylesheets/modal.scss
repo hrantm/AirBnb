@@ -1,0 +1,67 @@
+.buttons {
+  display: flex;
+  padding: 10px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  padding: 10px;
+}
+
+.input-field {
+  border: 1px solid #d3d3d3;
+  margin: 5px;
+  height: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.login-form{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.form-submit-input{
+  border: 1px solid #ff7e82;
+  border-color: #ff7e82;
+  background-color: #ff7e82;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
+.login-marketing {
+  text-align: left;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 18px;
+}
+
+.switchModalText {
+  font-weight: normal;
+}
+
+.switchModal {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
