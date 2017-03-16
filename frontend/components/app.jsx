@@ -6,7 +6,6 @@ const App = ({ children }) => (
   <div>
     <GreetingContainer />
     { children }
-    <OfficeContainer />
   </div>
 );
 
