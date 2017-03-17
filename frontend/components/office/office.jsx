@@ -1,5 +1,6 @@
 import React from 'react';
 import {hashHistory} from 'react-router';
+import SearchContainer from '../search/search_container';
 
 class Office extends React.Component {
   constructor(props) {
@@ -15,6 +16,8 @@ class Office extends React.Component {
       <div>
         <h1 className='home-marketing-line-one'>Book an office today</h1>
         <h1 className='home-marketing-line-two'>and get things done!</h1>
+        <SearchContainer />
+
         <h3 className='feature-title'>Featured</h3>
         <ul className='image-list'>
         {this.props.offices.map(office => (
