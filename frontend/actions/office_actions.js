@@ -1,6 +1,7 @@
 import * as OfficeAPIUtil from '../util/office_api_util';
 
 export const RECEIVE_OFFICES = 'RECEIVE_OFFICES';
+export const RECEIVE_OFFICE = 'RECEIVE_OFFICE';
 
 export const fetchOffices = showAmount => dispatch => {
   return(
@@ -9,7 +10,19 @@ export const fetchOffices = showAmount => dispatch => {
   );
 };
 
+export const fetchOffice = id => dispatch => {
+  return (
+    OfficeAPIUtil.fetchOffice(id)
+      .then(office => dispatch(receiveOffice(office)))
+  );
+};
+
 export const receiveOffices = offices => ({
   type: RECEIVE_OFFICES,
   offices
+});
+
+export const receiveOffice = office => ({
+  type: RECEIVE_OFFICE,
+  office
 });

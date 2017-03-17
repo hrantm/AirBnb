@@ -16,6 +16,10 @@ class Api::OfficesController < ApplicationController
     end
   end
 
+  def show
+    @office = Office.find(params[:id])
+  end
+
   private
 
   def office_params
