@@ -10,7 +10,9 @@
 
 .logo {
   display: flex;
+  color: #ff7e82;
   padding: 10px;
+  font-size: 16px;
 }
 
 .input-field {
@@ -80,7 +82,17 @@
 }
 
 .auth-button:hover {
-  background: #ff7e82;
-  color: white;
+  color: #ff7e82;
   border-radius: 2px;
+}
+
+.home-marketing-line-one {
+  font-size: 26px;
+  font-weight: bolder;
+  margin: 20px 0px 0px 30px;
+}
+.home-marketing-line-two {
+  font-size: 26px;
+  font-weight: bolder;
+  margin: 0px 0px 30px 70px;
 }
