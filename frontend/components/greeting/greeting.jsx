@@ -58,8 +58,8 @@ class Greeting extends React.Component {
         </div>
          <SessionFormContainer/>
       </div>
-      <h1 className='home-marketing'>Book an office today</h1>
-      <h1 className='home-marketing'>and get things done!</h1>
+      <h1 className='home-marketing-line-one'>Book an office today</h1>
+      <h1 className='home-marketing-line-two'>and get things done!</h1>
     </div>
     );
   }
