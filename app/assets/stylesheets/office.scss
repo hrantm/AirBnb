@@ -11,14 +11,15 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 900px;
+  margin-left: 50px;
+  max-width: 1000px;
   min-width: 500px;
 }
 
 .feature-title {
   font-weight: normal;
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 20px;
   color: #2f4f4f;
 }
 

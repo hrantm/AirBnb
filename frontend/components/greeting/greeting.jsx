@@ -14,7 +14,6 @@ class Greeting extends React.Component {
   loggedIn(currentUser, signout){
 
     return (
-      <div>
       <div className='main-nav'>
         <h1 className='logo'>Air BnB</h1>
         <div className='buttons'>
@@ -22,9 +21,6 @@ class Greeting extends React.Component {
           <button className='auth-button' onClick={signout}>Sign Out</button>
         </div>
          <SessionFormContainer/>
-      </div>
-      <h1 className='home-marketing-line-one'>Book an office today</h1>
-      <h1 className='home-marketing-line-two'>and get things done!</h1>
       </div>
     );
   }
@@ -49,7 +45,6 @@ class Greeting extends React.Component {
 
   loggedOut(){
     return (
-      <div>
       <div className='main-nav'>
         <h1 className='logo'>Air BnB</h1>
         <div className='buttons'>
@@ -58,9 +53,6 @@ class Greeting extends React.Component {
         </div>
          <SessionFormContainer/>
       </div>
-      <h1 className='home-marketing-line-one'>Book an office today</h1>
-      <h1 className='home-marketing-line-two'>and get things done!</h1>
-    </div>
     );
   }
 
