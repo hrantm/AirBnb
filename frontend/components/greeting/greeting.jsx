@@ -18,7 +18,7 @@ class Greeting extends React.Component {
         <h1 className='logo'>Air BnB</h1>
         <div className='buttons'>
           <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
-          <button onClick={signout}>Sign Out</button>
+          <button className='auth-button' onClick={signout}>Sign Out</button>
         </div>
          <SessionFormContainer/>
       </div>
@@ -48,8 +48,8 @@ class Greeting extends React.Component {
       <div className='main-nav'>
         <h1 className='logo'>Air BnB</h1>
         <div className='buttons'>
-          <button className='buttons' onClick={this.toggleSessionForm('signup')}>Sign Up</button>
-          <button className='buttons' onClick={this.toggleSessionForm('login')}>Log In</button>
+          <button className='auth-button' onClick={this.toggleSessionForm('signup')}>Sign Up</button>
+          <button className='auth-button' onClick={this.toggleSessionForm('login')}>Log In</button>
         </div>
          <SessionFormContainer/>
       </div>

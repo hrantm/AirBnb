@@ -73,3 +73,14 @@
   font-size: 16px;
   padding-right: 10px;
 }
+
+.auth-button {
+  display: flex;
+  padding: 5px;
+}
+
+.auth-button:hover {
+  background: #ff7e82;
+  color: white;
+  border-radius: 2px;
+}
