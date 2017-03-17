@@ -18,7 +18,7 @@ const modStyle = {
     top                        : '12%',
     left                       : '30%',
     right                      : '30%',
-    bottom                     : '22%',
+    bottom                     : 'none',
     border                     : '1px solid #ccc',
     background                 : '#fff',
     overflow                   : 'auto',

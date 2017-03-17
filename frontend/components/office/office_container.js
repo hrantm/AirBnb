@@ -3,7 +3,7 @@ import {fetchOffices} from '../../actions/office_actions';
 import Office from './office';
 
 const mapStateToProps = ({offices}) => ({
-  offices
+  offices: offices instanceof Array ? offices : []
 });
 
 const mapDispatchToProps = dispatch => ({

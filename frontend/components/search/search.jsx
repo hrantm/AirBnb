@@ -61,9 +61,9 @@ class Search extends React.Component{
             <div className='title-and-guests'>
               <select className='guests-drop-down' onChange={this.update('guests')}>
                 <option value="1" select='selected'>1 Guest</option>
-                <option value="2">2 Guest</option>
-                <option value="3">3 Guest</option>
-                <option value="4">4 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
                 <option value="larger">4+</option>
               </select>
             </div>
