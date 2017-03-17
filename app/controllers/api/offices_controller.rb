@@ -21,13 +21,13 @@ class Api::OfficesController < ApplicationController
   end
 
   def search
-    @offices = Office.where('location LIKE ?', params[:office][:search_params])
+    @offices = Office.where('location LIKE ?', params[:search_params])
     render :index
   end
 
   private
 
   def office_params
-    params.require(:office).permit(:show_amount, :search_params)
+    params.require(:office).permit(:show_amount)
   end
 end

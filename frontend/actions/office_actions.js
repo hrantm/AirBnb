@@ -17,6 +17,13 @@ export const fetchOffice = id => dispatch => {
   );
 };
 
+export const searchOffice = location => dispatch => {
+  return(
+    OfficeAPIUtil.searchOffice(location)
+      .then(offices => dispatch(receiveOffices(offices)))
+  );
+};
+
 export const receiveOffices = offices => ({
   type: RECEIVE_OFFICES,
   offices

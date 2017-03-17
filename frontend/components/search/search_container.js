@@ -1,13 +1,13 @@
 import {connect} from 'react-redux';
-import {fetchSearchedOffices} from '../../actions/office_actions';
+import {searchOffice} from '../../actions/office_actions';
 import Search from './search';
 
-const mapStateToProps = state => ({
-
+const mapStateToProps = ({offices}) => ({
+  offices
 });
 
 const mapDispatchToProps = dispatch => ({
-
+  searchOffice: (location) => dispatch(searchOffice(location))
 });
 
 export default connect(
