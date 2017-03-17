@@ -20,10 +20,14 @@ class Api::OfficesController < ApplicationController
     @office = Office.find(params[:id])
   end
 
+  def search
+    @offices = Office.where('location LIKE ?', params[:office][:search_params])
+    render :index
+  end
+
   private
 
   def office_params
-    params.require(:office).permit(:owner_id, :location, :lat, :lng, :price,  :image_url, :about_this,
-    :guest_limit, :desks, :show_amount)
+    params.require(:office).permit(:show_amount, :search_params)
   end
 end

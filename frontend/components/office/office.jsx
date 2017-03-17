@@ -11,7 +11,6 @@ class Office extends React.Component {
   }
 
   render(){
-    console.log(this.props.offices);
     return(
       <div>
         <h1 className='home-marketing-line-one'>Book an office today</h1>

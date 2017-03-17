@@ -10,10 +10,15 @@ class OfficeDetails extends React.Component {
   }
 
   render(){
-    console.log(this.props);
     return(
       <div>
-        <img src={this.props.offices.image_url} />
+        <div>
+          <img src={this.props.offices.image_url} />
+        </div>
+        <div>
+          <h2>Description</h2>
+          <p>{this.props.offices.about_this}</p>
+        </div>
       </div>
     );
   }
