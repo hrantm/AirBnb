@@ -8,16 +8,14 @@ class Office extends React.Component {
   }
 
   componentDidMount(){
-    this.props.fetchOffices(9);
+    if (this.props.pageType === 'home') {
+      this.props.fetchOffices(9);
+    }
   }
 
   render(){
     return(
       <div>
-        <h1 className='home-marketing-line-one'>Book an office today</h1>
-        <h1 className='home-marketing-line-two'>and get things done!</h1>
-        <SearchContainer />
-
         <h3 className='feature-title'>Featured</h3>
         <ul className='image-list'>
         {this.props.offices.map(office => (
