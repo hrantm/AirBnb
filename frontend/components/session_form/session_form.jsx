@@ -47,6 +47,7 @@ class SessionForm extends React.Component {
     this.switchForm = this.switchForm.bind(this);
     this.renderSignUp = this.renderSignUp.bind(this);
     this.renderLogin = this.renderLogin.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
 // Modal Code
@@ -178,6 +179,14 @@ addFields(){
     }
   }
 
+  demoLogin(e) {
+    e.preventDefault();
+    const user = {email: 'guest@guest.com', password: 'testing123'};
+    this.props.login(user).then(() => {
+      this.props.toggleModal('login');
+    });
+  }
+
   render(){
     return (
       <Modal
@@ -201,6 +210,13 @@ addFields(){
             className='form-submit-input'
             type='submit'
             value={this.submitButtonText()}/>
+
+            <input
+              className='form-submit-input'
+              type='submit'
+              value='Demo Login'
+              onClick={this.demoLogin}/>
+
         </form>
         {this.switchForm()}
       </Modal>

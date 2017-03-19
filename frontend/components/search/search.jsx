@@ -59,8 +59,8 @@ class Search extends React.Component{
           </div>
           <div className='search-and-guests'>
             <div className='title-and-guests'>
-              <select className='guests-drop-down' onChange={this.update('guests')}>
-                <option value="1" select='selected'>1 Guest</option>
+              <select className='guests-drop-down' defaultValue='1' onChange={this.update('guests')}>
+                <option value="1">1 Guest</option>
                 <option value="2">2 Guests</option>
                 <option value="3">3 Guests</option>
                 <option value="4">4 Guests</option>
