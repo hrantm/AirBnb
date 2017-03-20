@@ -8,8 +8,6 @@ class Api::BookingsController < ApplicationController
     end
   end
 
-  def index
-  end
 
   def destroy
     @booking = Booking.find(params[:id])

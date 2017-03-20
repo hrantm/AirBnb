@@ -37,6 +37,11 @@ button {
 }
 
 #map-container {
-  width: 500px;
+  min-width: 450px;
   height: 500px;
+  margin-right: 5%;
+}
+
+.results-map {
+  display: flex;
 }

@@ -8,6 +8,7 @@ class OfficeMap extends React.Component {
   }
 
   componentDidMount() {
+    // debugger
     // set the map to show SF
     const mapOptions = {
       center: { lat: 37.7758, lng: -122.435 }, // this is SF
@@ -15,7 +16,7 @@ class OfficeMap extends React.Component {
     };
 
     // wrap the mapDOMNode in a Google Map
-    this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.map = new google.maps.Map(this.refs.map, mapOptions);
 
   }
 
@@ -24,7 +25,7 @@ class OfficeMap extends React.Component {
 
 
   render() {
-      return <div className="map" ref={ map => this.mapNode = map}>Map</div>;
+    return <div id='map-container' className="map" ref="map">Map</div>;
 
   }
 }
