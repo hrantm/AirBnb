@@ -9,7 +9,9 @@ class Api::OfficesController < ApplicationController
   # end
 
   def index
-    if params[:office]
+    if bounds
+      @offices = Office.in_bounds(bounds)
+    elsif params[:office]
       @offices = Office.all.sample(params[:office][:show_amount].to_i)
     else
       @offices = Office.all
@@ -25,7 +27,7 @@ class Api::OfficesController < ApplicationController
       @offices = Office.all.where('guest_limit >= ?', params[:search_params][:guests].to_i)
     else
       @offices = Office.where('location LIKE ? AND guest_limit >= ?',
-       "%#{params[:search_params][:location].split(' ').map(&:downcase).map(&:capitalize).join(' ')}%", 
+       "%#{params[:search_params][:location].split(' ').map(&:downcase).map(&:capitalize).join(' ')}%",
        params[:search_params][:guests].to_i)
     end
     render :index
@@ -36,4 +38,9 @@ class Api::OfficesController < ApplicationController
   def office_params
     params.require(:office).permit(:show_amount)
   end
+
+  def bounds
+   params[:bounds]
+  end
+
 end

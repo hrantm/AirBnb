@@ -2,6 +2,7 @@ import {connect} from 'react-redux';
 import {searchOffice} from '../../actions/office_actions';
 import Search from './search';
 
+
 const mapStateToProps = ({offices}) => ({
   offices
 });

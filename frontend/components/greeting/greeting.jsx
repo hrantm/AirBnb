@@ -18,6 +18,7 @@ class Greeting extends React.Component {
         <h1 className='logo' onClick={() => hashHistory.push('/')}>Office BnB</h1>
         <div className='buttons'>
           <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
+          <button className='auth-button' onClick={() => hashHistory.push(`/${currentUser.id}/bookings`)}>Bookings</button>
           <button className='auth-button' onClick={signout}>Sign Out</button>
         </div>
          <SessionFormContainer/>

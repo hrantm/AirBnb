@@ -25,7 +25,7 @@ const Root = ({ store }) => {
       <Route path="/" component={ App }>
         <IndexRoute component={ HomePage } />
         <Route path='/search' component={SearchPage}/>
-        <Route path="/profile" component={ SessionFormContainer } />
+        <Route path='/:user_id/bookings' component={SearchPage}/>
         <Route path='/offices'>
             <Route path='/offices/:office_id' component={ OfficeDetailsContainer }/>
         </Route>

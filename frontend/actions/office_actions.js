@@ -3,9 +3,9 @@ import * as OfficeAPIUtil from '../util/office_api_util';
 export const RECEIVE_OFFICES = 'RECEIVE_OFFICES';
 export const RECEIVE_OFFICE = 'RECEIVE_OFFICE';
 
-export const fetchOffices = showAmount => dispatch => {
+export const fetchOffices = filters => dispatch => {
   return(
-  OfficeAPIUtil.fetchOffices(showAmount)
+  OfficeAPIUtil.fetchOffices(filters)
     .then(offices => dispatch(receiveOffices(offices)))
   );
 };

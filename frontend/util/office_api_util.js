@@ -1,5 +1,5 @@
-export const fetchOffices = (showAmount) => (
-  $.ajax({method: 'GET', url: 'api/offices' ,data: {office: {show_amount: showAmount}}})
+export const fetchOffices = data => (
+  $.ajax({method: 'GET', url: 'api/offices' ,data: data})
 );
 
 export const fetchOffice = (id) => (
