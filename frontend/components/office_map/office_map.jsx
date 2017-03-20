@@ -19,8 +19,13 @@ class OfficeMap extends React.Component {
 
   }
 
+  // return <div className="map" ref={ map => this.mapNode = map}>Map</div>;
+  // return <div className="map" ref="map">Map</div>;
+
+
   render() {
-    return <div className="map" ref="map">Map</div>;
+      return <div className="map" ref={ map => this.mapNode = map}>Map</div>;
+
   }
 }
 

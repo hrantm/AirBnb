@@ -8,4 +8,6 @@ class Office < ApplicationRecord
     class_name: :User
 
   has_many :reviews
+
+  has_many :bookings
 end

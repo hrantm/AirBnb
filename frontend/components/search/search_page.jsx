@@ -9,6 +9,7 @@ class SearchPage extends React.Component {
       <div>
         <SearchContainer />
         <OfficeContainer />
+        <OfficeMap />
       </div>
     );
   }

@@ -15,6 +15,11 @@ class User < ApplicationRecord
     foreign_key: :author_id,
     class_name: :Review
 
+  has_many :bookings,
+    primary_key: :id,
+    foreign_key: :author_id,
+    class_name: :Booking
+
   def self.generate_session_token
     SecureRandom.urlsafe_base64
   end

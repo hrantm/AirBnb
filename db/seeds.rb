@@ -62,4 +62,5 @@ about_this: 'A modern, open space on the hipster side of Brooklyn.', guest_limit
 
 Office.create({owner_id: 10, location: 'New York', lat: 40.682923,
 lng: -73.789550, price: 15, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1489979469/afe3a3ed124cb421preview-114371-Tayco_View02_t0l829.jpg',
-about_this: 'desc', guest_limit: 2, desks: 2})
+about_this: 'Great workspace in Manhatten. The best pleace to get some work done!',
+guest_limit: 2, desks: 2})
