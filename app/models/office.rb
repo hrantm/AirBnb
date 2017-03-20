@@ -6,4 +6,6 @@ class Office < ApplicationRecord
     primary_key: :id,
     foreign_key: :owner_id,
     class_name: :User
+
+  has_many :reviews
 end
