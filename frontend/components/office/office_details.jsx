@@ -11,8 +11,7 @@ class OfficeDetails extends React.Component {
   }
 
   guestText(){
-    console.log(this.props);
-    if (this.props.guests === 1) {
+    if (this.props.offices.guest_limit === 1) {
       return `${this.props.offices.guest_limit} Guest`;
     }else {
       return `${this.props.offices.guest_limit} Guests`;
