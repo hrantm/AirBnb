@@ -1,7 +1,7 @@
 import React from 'react';
 import OfficeContainer from '../office/office_container';
 import SearchContainer from './search_container';
-import OfficeMap from '../office_map/office_map';
+import OfficeMapContainer from '../office_map/office_map_container';
 
 class SearchPage extends React.Component {
   render(){
@@ -11,7 +11,7 @@ class SearchPage extends React.Component {
         <h3 className='feature-title'>Available Office Space</h3>
         <div className='results-map'>
           <OfficeContainer />
-          <OfficeMap />
+          <OfficeMapContainer />
         </div>
       </div>
     );
