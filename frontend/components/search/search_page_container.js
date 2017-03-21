@@ -3,9 +3,11 @@ import {searchOffice} from '../../actions/office_actions';
 import SearchPage from './search_page';
 
 
-const mapStateToProps = ({offices}) => ({
-  offices
-});
+const mapStateToProps = ({offices}) => {
+  return ({
+    offices
+  });
+};
 
 const mapDispatchToProps = dispatch => ({
 });

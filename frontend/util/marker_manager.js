@@ -10,7 +10,6 @@ export default class MarkerManager {
   }
 
   updateMarkers(offices) {
-    console.log('success');
     this.offices = offices;
     this._officesToAdd(offices).forEach(this._createMarkerFromOffice);
     this._markersToRemove().forEach(this._removeMarker);

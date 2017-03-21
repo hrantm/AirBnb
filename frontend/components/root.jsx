@@ -7,6 +7,7 @@ import OfficeContainer from './office/office_container';
 import OfficeDetailsContainer from './office/office_details_container';
 import SearchContainer from './search/search_container';
 import SearchPage from './search/search_page';
+import SearchPageContainer from './search/search_page_container';
 import { HomePage } from './office/home_page';
 import BookingContainer from './booking/booking_container';
 
@@ -32,7 +33,7 @@ const Root = ({ store }) => {
     <Router history={ hashHistory }>
       <Route path="/" component={ App }>
         <IndexRoute component={ HomePage } />
-        <Route path='/search' component={SearchPage}/>
+        <Route path='/search' component={SearchPageContainer}/>
         <Route path='/:user_id/bookings' component={BookingContainer} onEnter={_redirectIfLoggedOut}/>
         <Route path='/offices'>
             <Route path='/offices/:office_id' component={ OfficeDetailsContainer }/>
