@@ -64,7 +64,7 @@ class Search extends React.Component{
                 <option value="2">2 Guests</option>
                 <option value="3">3 Guests</option>
                 <option value="4">4 Guests</option>
-                <option value="larger">4+</option>
+                <option value="5">4+</option>
               </select>
             </div>
             <div className='search-button-container'>

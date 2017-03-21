@@ -1,4 +1,5 @@
 import React from 'react';
+import BookingFormContainer from '../booking/booking_form_container';
 
 class OfficeDetails extends React.Component {
   constructor(props) {
@@ -19,6 +20,7 @@ class OfficeDetails extends React.Component {
   }
 
   render(){
+    // console.log(this.props.offices);
     return(
       <div>
         <div className='image-container'>
@@ -34,6 +36,7 @@ class OfficeDetails extends React.Component {
           <h2 className='about-title'>About This</h2>
           <p className='about-body'>{this.props.offices.about_this}</p>
         </div>
+        <BookingFormContainer office={this.props.offices}/>
       </div>
     );
   }
