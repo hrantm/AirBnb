@@ -20,13 +20,20 @@ const Root = ({ store }) => {
     }
   };
 
+  const _redirectIfLoggedOut = (nextState, replace) => {
+    const currentUser = store.getState().session.currentUser;
+    if (!currentUser) {
+      replace('/');
+    }
+  };
+
   return (
   <Provider store={ store }>
     <Router history={ hashHistory }>
       <Route path="/" component={ App }>
         <IndexRoute component={ HomePage } />
         <Route path='/search' component={SearchPage}/>
-        <Route path='/:user_id/bookings' component={BookingContainer}/>
+        <Route path='/:user_id/bookings' component={BookingContainer} onEnter={_redirectIfLoggedOut}/>
         <Route path='/offices'>
             <Route path='/offices/:office_id' component={ OfficeDetailsContainer }/>
         </Route>
