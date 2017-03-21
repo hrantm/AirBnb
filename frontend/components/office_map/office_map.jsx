@@ -44,7 +44,6 @@ class OfficeMap extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log(this.props.offices);
     let a = this.props.offices.map( el => el.lat);
     let b = this.props.offices.map( el => el.lng);
     let latMax = Math.max(...a);
@@ -93,7 +92,6 @@ class OfficeMap extends React.Component {
 
 
   render() {
-    console.log(this.props);
     return <div id='map-container' className="map" ref="map">Map</div>;
 
   }
