@@ -1,7 +1,7 @@
 .booking-card {
   border: 1px solid grey;
   width: 270px;
-  height: 500px;
+  height: 600px;
   margin-left: 7%;
   margin-top: 5%;
   display: flex;
@@ -17,7 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 300px;
+  height: 400px;
 }
 
 .booking-card-list {
@@ -33,6 +33,11 @@
 .booking-image {
   height: 200px;
 }
+
+.booking-image:hover {
+  cursor: pointer;
+}
+
 
 .cancel-booking{
   margin-bottom: 30px;
@@ -56,5 +61,42 @@
 
 .booking-location {
   margin-top: 30px;
-  font-size: 26px;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.booking-location:hover {
+  cursor: pointer;
+}
+
+.calc-div {
+  display: flex;
+}
+
+.calc-div-item {
+  margin: 20px;
+}
+
+.calc-div-content {
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.booking-desc {
+  color: #2f4f4f;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.booking-title {
+  display: flex;
+}
+
+.booking-guest-limit {
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2f4f4f;
 }

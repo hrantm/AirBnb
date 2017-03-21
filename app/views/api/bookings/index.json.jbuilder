@@ -8,4 +8,8 @@ json.array! @bookings do |booking|
   json.end_date booking.end_date
   json.location booking.office.location
   json.image_url booking.office.image_url
+  json.guest_limit booking.office.guest_limit
+  json.price booking.office.price
+  json.days (booking.end_date - booking.start_date).to_i
+  json.desc booking.office.about_this
 end

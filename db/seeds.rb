@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
 User.create({email: 'guest@guest.com', password: 'testing123', fname: 'Guest', lname: 'Blank'})
 User.create({email: 'harvey@gmail.com', password: 'testing123', fname: 'Harvey', lname: 'Mirijanyan'})
 User.create({email: 'marcus@gmail.com', password: 'testing123', fname: 'Marcus', lname: 'Johnson'})
@@ -42,12 +43,12 @@ about_this: 'Beautiful corner office in the heart of Los Angeles. You will love 
 
 Office.create({owner_id: 4, location: 'Los Angeles', lat: 34.095554,
 lng: -118.217446, price: 80, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1489689260/a9951a89213b48fb31966c16c7067e6c_ddz51j.jpg',
-about_this: 'Open, modern space in downtown LA. No cubicles!', guest_limit: 3, desks: 3})
+about_this: 'Open, modern space in downtown LA. No cubicles in sight!', guest_limit: 3, desks: 3})
 
 
 Office.create({owner_id: 4, location: 'Los Angeles', lat: 34.053467,
 lng: -118.391854, price: 65, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1489689332/Milan-Office-1_zh2apz.jpg',
-about_this: 'A modern simple space to get work done. Simplicity at its best!', guest_limit: 2, desks: 2})
+about_this: 'A modern space to get work done. Simplicity at its best!', guest_limit: 2, desks: 2})
 
 
 Office.create({owner_id: 5, location: 'Los Angeles', lat: 34.094424,
@@ -57,10 +58,19 @@ about_this: 'A gorgeous space in Los Angeles. Comes with everything an executive
 
 Office.create({owner_id: 7, location: 'New York', lat: 40.702707,
 lng: -73.909370, price: 15, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1489979929/6b498530dfa9f1fd16169e06e6046adc_oqskrs.jpg',
-about_this: 'A modern, open space on the hipster side of Brooklyn.', guest_limit: 1, desks: 1})
+about_this: 'A modern, open space on the hipster side of Brooklyn. A great place to get work done.', guest_limit: 1, desks: 1})
 
 
 Office.create({owner_id: 10, location: 'New York', lat: 40.682923,
 lng: -73.789550, price: 15, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1489979469/afe3a3ed124cb421preview-114371-Tayco_View02_t0l829.jpg',
 about_this: 'Great workspace in Manhatten. The best place to get some work done!',
 guest_limit: 2, desks: 2})
+
+ Booking.create({author_id: 1, office_id: 5, start_date: Date.new(2017, 4, 3),
+    end_date: Date.new(2017, 4, 10)})
+
+ Booking.create({author_id: 1, office_id: 2, start_date: Date.new(2017, 4, 15),
+    end_date: Date.new(2017, 4, 25)})
+
+ Booking.create({author_id: 1, office_id: 7, start_date: Date.new(2017, 5, 3),
+    end_date: Date.new(2017, 6, 10)})

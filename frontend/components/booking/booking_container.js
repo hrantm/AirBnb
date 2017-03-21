@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import {fetchBookings} from '../../actions/booking_actions';
+import {fetchBookings, deleteBooking} from '../../actions/booking_actions';
 import Booking from './booking';
 
 const mapStateToProps = state => {
@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  fetchBookings: () => dispatch(fetchBookings())
+  fetchBookings: () => dispatch(fetchBookings()),
+  deleteBooking: id => dispatch(deleteBooking(id))
 });
 
 export default connect(
