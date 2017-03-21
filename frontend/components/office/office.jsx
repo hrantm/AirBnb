@@ -15,7 +15,7 @@ class Office extends React.Component {
 
   render(){
     return(
-      <div className='image-list-container'>
+      <div >
         <ul className='image-list'>
         {this.props.offices.map(office => (
           <li className='office-li' onClick={() => hashHistory.push(`/offices/${office.id}`)}>
