@@ -58,7 +58,7 @@
 .search-title {
   font-weight: normal;
   font-size: 14px;
-  margin-left: 5%;
+  margin-left: 3%;
   color: #2f4f4f;
   margin-bottom: 1%;
 }
@@ -67,4 +67,8 @@ select{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+.image-list-container{
+  width: 800px;
 }

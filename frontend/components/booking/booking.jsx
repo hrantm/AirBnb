@@ -28,7 +28,7 @@ class Booking extends React.Component {
             <div className='booking-title'>
               <h1 className='booking-card-item booking-location'
                 onClick={ () => hashHistory.push(`/offices/${booking.office_id}`)}>{booking.location}</h1>
-              <h1 className='booking-guest-limit'>{booking.guest_limit}</h1>
+              <h1 className='booking-guest-limit'>Seats {booking.guest_limit}</h1>
             </div>
 
             <h1 className='booking-desc'>{booking.desc.slice(0,40)}...</h1>

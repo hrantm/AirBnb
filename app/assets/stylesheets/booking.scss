@@ -91,13 +91,12 @@
 
 .booking-title {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .booking-guest-limit {
-  margin-top: 30px;
-  margin-right: 20px;
-  font-size: 28px;
+  font-size: 14px;
   font-weight: bold;
   color: #ff7e82;
 }

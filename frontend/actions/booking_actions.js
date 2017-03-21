@@ -2,6 +2,7 @@ import * as BookingAPIUtil from '../util/booking_api_util';
 
 export const RECEIVE_BOOKINGS = 'RECEIVE_BOOKINGS';
 export const RECEIVE_DELETED_BOOKING = 'RECEIVE_DELETED_BOOKING';
+export const RECEIVE_BOOKING = 'RECEIVE_BOOKING';
 
 export const fetchBookings = () => dispatch => {
   return (
@@ -17,7 +18,19 @@ export const deleteBooking = id => dispatch => {
   );
 };
 
+export const createBooking = booking => dispatch => {
+  return (
+    BookingAPIUtil.createBooking(booking)
+      .then(newBooking => dispatch(receiveBooking(newBooking)))
+  );
+};
+
 //SYNC
+
+export const receiveBooking = booking => ({
+  type: RECEIVE_BOOKING,
+  booking
+});
 
 export const receiveBookings = bookings => ({
   type: RECEIVE_BOOKINGS,
