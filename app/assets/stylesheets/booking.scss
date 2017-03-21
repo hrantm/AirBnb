@@ -62,10 +62,10 @@
 .booking-location {
   margin-top: 30px;
   font-size: 28px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
-.booking-location:hover {
+.booking-title:hover {
   cursor: pointer;
 }
 
@@ -91,12 +91,13 @@
 
 .booking-title {
   display: flex;
+  justify-content: center;
 }
 
 .booking-guest-limit {
   margin-top: 30px;
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: 28px;
   font-weight: bold;
-  color: #2f4f4f;
+  color: #ff7e82;
 }

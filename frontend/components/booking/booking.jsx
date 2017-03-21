@@ -24,6 +24,7 @@ class Booking extends React.Component {
               <img className='booking-image' src={booking.image_url}
                 onClick={ () => hashHistory.push(`/offices/${booking.office_id}`)}/>
             <div className='card-info'>
+
             <div className='booking-title'>
               <h1 className='booking-card-item booking-location'
                 onClick={ () => hashHistory.push(`/offices/${booking.office_id}`)}>{booking.location}</h1>

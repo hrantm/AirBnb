@@ -8,7 +8,7 @@ class SearchPage extends React.Component {
     return (
       <div>
         <SearchContainer />
-        <h3 className='search-title'>Available Office Space</h3>
+        <h3 className='search-title'>Results</h3>
         <div className='results-map'>
           <OfficeContainer />
           <OfficeMapContainer />
