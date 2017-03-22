@@ -66,6 +66,7 @@ class BookingForm extends React.Component {
       end_date: this.state.endDate._d
     };
     this.props.createBooking(booking);
+    hashHistory.push(`/:${this.props.currentUser.id}/bookings`);
   }
 
   render(){
