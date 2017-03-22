@@ -30,7 +30,7 @@ class OfficeDetails extends React.Component {
         </div>
         <div className='detail-title'>
           <h1 className='location-guests'>{this.props.offices.location}</h1>
-          <h1 className='location-guests'>{this.guestText()}</h1>
+          <h1 className='location-guests'>Seats {this.props.offices.guest_limit}</h1>
         </div>
         <div>
           <h2 className='about-title'>About This</h2>
