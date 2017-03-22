@@ -9,8 +9,9 @@ const _initialState = {
 const ReviewReducer = (state = _initialState, action) => {
   switch (action.type) {
     case RECEIVE_REVIEWS:
+    // debugger
       return {
-        reviews: state.reviews,
+        reviews: action.reviews,
         erros: []};
     case RECEIVE_REVIEW_ERRORS:
       const errors = action.errors;

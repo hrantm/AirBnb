@@ -4,6 +4,7 @@ export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
 export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
 
 export const fetchReviews = () => dispatch => {
+  debugger
   return (
     ReviewAPIUtil.fetchReviews()
       .then(reviews => dispatch(receiveReviews(reviews)),

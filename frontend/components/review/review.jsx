@@ -6,10 +6,18 @@ class Review extends React.Component {
     super(props);
   }
 
+  componentDidMount(){
+    console.log('component fires');
+    this.props.fetchReviews();
+  }
+
   render(){
     console.log(this.props);
     return(
       <div>
+        {this.props.reviews.map(review => (
+          <h1>{review.body}</h1>
+        ))}
       </div>
     );
   }
