@@ -11,6 +11,7 @@
 
 .detail-title {
   display: flex;
+  justify-content: space-around;
 }
 
 .location-guests {
@@ -41,4 +42,11 @@
 }
 
 .detail-content {
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
 }

@@ -32,9 +32,10 @@ class OfficeDetails extends React.Component {
           <div className= 'detail-content'>
             <div className='detail-title'>
               <h1 className='location-guests'>{this.props.offices.location}</h1>
+              <div></div>
               <h1 className='location-guests'>Seats {this.props.offices.guest_limit}</h1>
             </div>
-            <div>
+            <div className='about-section'>
               <h2 className='about-title'>About This</h2>
               <p className='about-body'>{this.props.offices.about_this}</p>
             </div>

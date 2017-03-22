@@ -19,9 +19,9 @@ export const deleteBooking = id => dispatch => {
 };
 
 export const createBooking = booking => dispatch => {
+  //No need to receive booking because the bookings page is requesting all of them
   return (
     BookingAPIUtil.createBooking(booking)
-      .then(newBooking => dispatch(receiveBooking(newBooking)))
   );
 };
 

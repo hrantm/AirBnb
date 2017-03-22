@@ -1,7 +1,7 @@
 class Api::BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
-    if @booking.save!
+    if !Booking.overlapping?(@booking) && @booking.save!
       render 'api/bookings/show'
     else
       render json: ["Invalid start date / end date"], status: 401
