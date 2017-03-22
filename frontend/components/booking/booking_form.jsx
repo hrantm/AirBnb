@@ -5,10 +5,11 @@ import { DateRangePicker } from 'react-dates';
 class BookingForm extends React.Component {
   constructor(props){
     super(props);
-    this.state = {startDate: null, endDate: null};
+    this.state = {startDate: null, endDate: null, message: ''};
     this.handleFocusChange = this.handleFocusChange.bind(this);
     this.calcCost = this.calcCost.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.notLoggedInMessage = this.notLoggedInMessage.bind(this);
   }
 
   handleFocusChange(focus){
@@ -57,22 +58,37 @@ class BookingForm extends React.Component {
     }
   }
 
+  notLoggedInMessage(){
+    if (!this.props.currentUser) {
+      return(
+        <h1 className='not-logged-message'>Not Logged In</h1>
+      );
+    }
+  }
+
   handleSubmit(e){
     e.preventDefault();
-    const booking = {
-      author_id: this.props.currentUser.id,
-      office_id: this.props.office.id,
-      start_date: this.state.startDate._d,
-      end_date: this.state.endDate._d
-    };
-    this.props.createBooking(booking).
-    then(() => hashHistory.push(`/:${this.props.currentUser.id}/bookings`));
+    if (this.props.currentUser) {
+      const booking = {
+        author_id: this.props.currentUser.id,
+        office_id: this.props.office.id,
+        start_date: this.state.startDate._d,
+        end_date: this.state.endDate._d
+      };
+      this.props.createBooking(booking).
+      then(() => hashHistory.push(`/:${this.props.currentUser.id}/bookings`));
+    }
   }
+
+  // {this.props.errors.map(error => (
+  //   <h1 className='booking-form-error'>{error}</h1>
+  // ))}
+
 
   render(){
     // console.log(this.state.startDate._d);
     // console.log(this.state);
-    // console.log(this.props);
+    console.log(this.props);
     return (
     <form className='booking-form' onSubmit={this.handleSubmit}>
       <div className='daily-price'>
@@ -91,6 +107,7 @@ class BookingForm extends React.Component {
     {this.calcCost()}
     <div className='booking-submit-container'>
       <input className='booking-form-submit' type='submit' value='Book Now!'/>
+      {this.notLoggedInMessage()}
     </div>
   </form>
   );

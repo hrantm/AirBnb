@@ -40,5 +40,17 @@
 .booking-submit-container {
   width: 318px;
   display: flex;
-  justify-content: center;
+  height: 80px;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-logged-message {
+  color: #ff7e82;
+}
+
+.booking-form-error {
+  color: #ff7e82;
+  text-align: center;
 }

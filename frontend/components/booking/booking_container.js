@@ -5,7 +5,7 @@ import Booking from './booking';
 const mapStateToProps = state => {
   return (
     {
-      bookings: state.bookings
+      bookings: state.bookings.bookings
     }
   );
 };

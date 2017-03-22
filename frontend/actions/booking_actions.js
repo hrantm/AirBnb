@@ -3,6 +3,8 @@ import * as BookingAPIUtil from '../util/booking_api_util';
 export const RECEIVE_BOOKINGS = 'RECEIVE_BOOKINGS';
 export const RECEIVE_DELETED_BOOKING = 'RECEIVE_DELETED_BOOKING';
 export const RECEIVE_BOOKING = 'RECEIVE_BOOKING';
+export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+
 
 export const fetchBookings = () => dispatch => {
   return (
@@ -22,10 +24,17 @@ export const createBooking = booking => dispatch => {
   //No need to receive booking because the bookings page is requesting all of them
   return (
     BookingAPIUtil.createBooking(booking)
+      .fail(err => dispatch(receiveErrors(err.responseJSON)))
   );
 };
 
 //SYNC
+
+export const receiveErrors = errors => ({
+  type: RECEIVE_ERRORS,
+  errors
+});
+
 
 export const receiveBooking = booking => ({
   type: RECEIVE_BOOKING,
