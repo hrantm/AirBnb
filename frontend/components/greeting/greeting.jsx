@@ -8,6 +8,12 @@ class Greeting extends React.Component {
     super(props);
     this.sessionButtons = this.sessionButtons.bind(this);
     this.toggleSessionForm = this.toggleSessionForm.bind(this);
+    this.logout = this.logout.bind(this);
+  }
+
+  logout() {
+    this.props.signout();
+    hashHistory.push('/');
   }
 
 
@@ -19,7 +25,7 @@ class Greeting extends React.Component {
         <div className='buttons'>
           <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
           <button className='auth-button' onClick={() => hashHistory.push(`/${currentUser.id}/bookings`)}>Bookings</button>
-          <button className='auth-button' onClick={signout}>Sign Out</button>
+          <button className='auth-button' onClick={this.logout}>Sign Out</button>
         </div>
          <SessionFormContainer/>
       </div>
