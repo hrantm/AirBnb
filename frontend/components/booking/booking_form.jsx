@@ -58,13 +58,12 @@ class BookingForm extends React.Component {
   }
 
   handleSubmit(e){
-    debugger
     e.preventDefault();
     const booking = {
       author_id: this.props.currentUser.id,
       office_id: this.props.office.id,
-      start_date: this.state.startDate,
-      end_date: this.state.endDate
+      start_date: this.state.startDate._d,
+      end_date: this.state.endDate._d
     };
     this.props.createBooking(booking);
   }
