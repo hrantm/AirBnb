@@ -10,7 +10,11 @@ class Api::ReviewsController < ApplicationController
 
   def update
     @review = Review.find(params[:id])
-  
+    if @review.update(review_params)
+      render :index
+    else
+      render json: ["Missing Body / Rating"], status: 401
+    end
   end
 
   def delete
