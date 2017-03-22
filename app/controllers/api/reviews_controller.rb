@@ -2,7 +2,7 @@ class Api::ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     if @review.save
-      render :index
+      render 'api/reviews/index'
     else
       render json: ["Missing Body / Rating"], status: 401
     end
@@ -11,7 +11,7 @@ class Api::ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
     if @review.update(review_params)
-      render :index
+      render 'api/reviews/index'
     else
       render json: ["Missing Body / Rating"], status: 401
     end
@@ -20,11 +20,12 @@ class Api::ReviewsController < ApplicationController
   def delete
     @review = Review.find(params[:id])
     @reivew.destroy
-    render :index
+    render 'api/reviews/index'
   end
 
   def index
-
+    @reviews = Review.all
+    render 'api/reviews/index'
   end
 
   private

@@ -74,3 +74,12 @@ guest_limit: 2, desks: 2})
 
  Booking.create({author_id: 1, office_id: 7, start_date: Date.new(2017, 5, 3),
     end_date: Date.new(2017, 6, 10)})
+
+Review.create({author_id: 1, office_id: 2, rating: 4,
+  body: 'I had a wonderful time working here.'})
+
+Review.create({author_id: 2, office_id: 1, rating: 1,
+  body: 'What a waste of time. Literally got nothing done, and the coffee machine did not work!'})
+
+Review.create({author_id: 1, office_id: 4, rating: 5,
+  body: 'The best experience I have ever had using Office Bnb.'})
