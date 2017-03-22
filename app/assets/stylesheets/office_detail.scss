@@ -1,8 +1,8 @@
 .image-container {
   margin-top: 5%;
   max-width: 1000px;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .detail-image {
@@ -14,25 +14,31 @@
 }
 
 .location-guests {
-  margin-left: 12%;
-  margin-top: 3%;
   font-size: 24px;
   font-weight: bold;
   color: #2f4f4f;
 }
 
 .about-title {
-  margin-left: 8%;
-  margin-top: 2%;
   font-size: 36px;
   font-weight: bolder;
   color: #2f4f4f;
 }
 
 .about-body {
-  margin-left: 10%;
-  margin-top: 2%;
   font-size: 30px;
   font-weight: bolder;
   color: #2f4f4f;
+}
+
+.details-and-form {
+  display: flex;
+  max-width: 1000px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 3%;
+
+}
+
+.detail-content {
 }

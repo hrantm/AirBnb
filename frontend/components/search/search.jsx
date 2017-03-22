@@ -48,13 +48,14 @@ class Search extends React.Component{
               onChange={this.update('location')}
               placeholder='Where'/>
           </div>
-          <div>
+          <div className='date-picker-container'>
               <DateRangePicker
                 startDate={this.state.startDate}
                 endDate={this.state.endDate}
                 focusedInput={this.state.focus}
                 onDatesChange={({startDate, endDate}) => { this.setState({ startDate, endDate }); }}
                 onFocusChange={this.handleFocusChange}
+                minimumNights={0}
               />
           </div>
           <div className='search-and-guests'>

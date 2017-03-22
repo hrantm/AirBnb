@@ -12,6 +12,9 @@
   height: 48px;
   text-align: center;
   width: 280px;
+  color: #2f4f4f;
+  font-weight: bold;
+
 }
 
 .search-and-guests {
@@ -35,6 +38,7 @@
   background-color: white;
   font-size: 15px;
   color: #2f4f4f;
+  font-weight: bold;
 }
 
 .search-submit {
@@ -71,4 +75,8 @@ select{
 
 .image-list-container{
   width: 800px;
+}
+
+.date-picker-container {
+  border: 1px solid #cacccd;
 }

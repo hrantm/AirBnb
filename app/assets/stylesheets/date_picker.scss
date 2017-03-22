@@ -347,7 +347,7 @@
     user-select: none; }
 
 .DateInput__display-text {
-  padding: 4px 8px;
+  padding: 4px 22px;
   white-space: nowrap;
   overflow: hidden; }
 
@@ -424,8 +424,9 @@
 
 .DateRangePickerInput {
   background-color: #fff;
-  border: 1px solid #cacccd;
-  display: inline-block; }
+  // border: 1px solid #cacccd;
+  display: inline-block;
+}
 
 .DateRangePickerInput--disabled {
   background: #cacccd; }
@@ -564,3 +565,12 @@
 .SingleDatePickerInput__clear-date--hover {
   background: #dbdbdb;
   border-radius: 50%; }
+
+  .DateInput {
+    color: #2f4f4f;
+    font-weight: bold;
+  }
+
+  .DateInput:hover {
+    cursor: pointer;
+  }

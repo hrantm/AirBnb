@@ -28,15 +28,19 @@ class OfficeDetails extends React.Component {
             className='detail-image'
             src={this.props.offices.image_url} />
         </div>
-        <div className='detail-title'>
-          <h1 className='location-guests'>{this.props.offices.location}</h1>
-          <h1 className='location-guests'>Seats {this.props.offices.guest_limit}</h1>
+        <div className='details-and-form'>
+          <div className= 'detail-content'>
+            <div className='detail-title'>
+              <h1 className='location-guests'>{this.props.offices.location}</h1>
+              <h1 className='location-guests'>Seats {this.props.offices.guest_limit}</h1>
+            </div>
+            <div>
+              <h2 className='about-title'>About This</h2>
+              <p className='about-body'>{this.props.offices.about_this}</p>
+            </div>
+          </div>
+            <BookingFormContainer office={this.props.offices}/>
         </div>
-        <div>
-          <h2 className='about-title'>About This</h2>
-          <p className='about-body'>{this.props.offices.about_this}</p>
-        </div>
-        <BookingFormContainer office={this.props.offices}/>
       </div>
     );
   }

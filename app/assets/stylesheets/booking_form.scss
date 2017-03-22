@@ -1,3 +1,44 @@
-.price-div {
+.price-calc-div {
   display: flex;
+  justify-content: space-around;
+  width: 318px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.daily-price {
+  display: flex;
+  justify-content: space-around;
+  width: 318px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.price-item {
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid #2f4f4f;
+  border-width: medium;
+  height: 400px;
+  width: 318px;
+}
+
+.booking-form-submit {
+  color: #2f4f4f;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #2f4f4f;
+  border-width: medium;
+  width: 100px;
+  height: 40px;
+}
+
+.booking-submit-container {
+  width: 318px;
+  display: flex;
+  justify-content: center;
 }
