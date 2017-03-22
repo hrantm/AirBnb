@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :users, only: [:create]
     resource :session, only: [:create, :destroy]
     resources :bookings, only: [:create, :destroy, :show, :index]
+    resources :reviews, only: [:create, :destroy, :index, :update]
     resources :offices, only: [:create, :index, :show] do
       collection do
         get 'search'
