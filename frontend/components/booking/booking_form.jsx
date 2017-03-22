@@ -70,6 +70,8 @@ class BookingForm extends React.Component {
     e.preventDefault();
     if (!this.state.startDate || !this.state.endDate) {
       this.setState({errors: ['Please Select A Date']});
+    }else {
+      this.setState({errors: []});
     }
     if (this.props.currentUser) {
       const booking = {
