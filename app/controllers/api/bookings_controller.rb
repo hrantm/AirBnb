@@ -4,7 +4,7 @@ class Api::BookingsController < ApplicationController
     if !Booking.overlapping?(@booking) && @booking.save!
       render 'api/bookings/show'
     else
-      render json: ["Invalid start date / end date"], status: 401
+        render json: ["Invalid start date / end date"], status: 401
     end
   end
 

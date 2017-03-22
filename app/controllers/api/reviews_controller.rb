@@ -2,6 +2,7 @@ class Api::ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     if @review.save
+      @reviews = Review.all
       render 'api/reviews/index'
     else
       render json: ["Missing Body / Rating"], status: 401
@@ -25,6 +26,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def index
+    #reviews should just be the reviews for the currentUser
     @reviews = Review.all
     render 'api/reviews/index'
   end
