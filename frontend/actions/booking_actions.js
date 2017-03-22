@@ -3,7 +3,7 @@ import * as BookingAPIUtil from '../util/booking_api_util';
 export const RECEIVE_BOOKINGS = 'RECEIVE_BOOKINGS';
 export const RECEIVE_DELETED_BOOKING = 'RECEIVE_DELETED_BOOKING';
 export const RECEIVE_BOOKING = 'RECEIVE_BOOKING';
-export const RECEIVE_ERRORS = "RECEIVE_ERRORS";
+export const RECEIVE_BOOKING_ERRORS = "RECEIVE_BOOKING_ERRORS";
 
 
 export const fetchBookings = () => dispatch => {
@@ -31,7 +31,7 @@ export const createBooking = booking => dispatch => {
 //SYNC
 
 export const receiveErrors = errors => ({
-  type: RECEIVE_ERRORS,
+  type: RECEIVE_BOOKING_ERRORS,
   errors
 });
 

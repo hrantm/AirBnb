@@ -90,7 +90,7 @@ class BookingForm extends React.Component {
 
   render(){
     // console.log(this.state.startDate._d);
-    console.log(this.state);
+    // console.log(this.state);
     // console.log(this.props);
     return (
     <form className='booking-form' onSubmit={this.handleSubmit}>
@@ -116,7 +116,7 @@ class BookingForm extends React.Component {
       />
     {this.calcCost()}
     <div className='booking-submit-container'>
-      <input className='booking-form-submit' type='submit' value='Book Now!'/>
+      <input className='booking-form-submit' type='submit' value='Book Now!' disabled={!this.props.currentUser}/>
       {this.notLoggedInMessage()}
     </div>
   </form>

@@ -1,7 +1,7 @@
 import { RECEIVE_BOOKINGS,
   RECEIVE_DELETED_BOOKING,
   RECEIVE_BOOKING,
-  RECEIVE_ERRORS} from '../actions/booking_actions';
+  RECEIVE_BOOKING_ERRORS} from '../actions/booking_actions';
 import merge from 'lodash/merge';
 
 // const BookingReducer = (state = [], action) => {
@@ -33,7 +33,7 @@ const BookingReducer = (state = _initialState, action) => {
         errors: []};
     case RECEIVE_BOOKING:
       return action.booking;
-    case RECEIVE_ERRORS:
+    case RECEIVE_BOOKING_ERRORS:
     const errors = action.errors;
       return merge({}, state, {
         errors
