@@ -88,9 +88,13 @@ class BookingForm extends React.Component {
   render(){
     // console.log(this.state.startDate._d);
     // console.log(this.state);
-    console.log(this.props);
+    // console.log(this.props);
     return (
     <form className='booking-form' onSubmit={this.handleSubmit}>
+      {this.props.errors.map(error => (
+        <h1 className='booking-form-error'>{error}</h1>
+      ))}
+
       <div className='daily-price'>
         <h1>${this.props.office.price}</h1>
         <div></div>
