@@ -1,5 +1,5 @@
-export const fetchReviews = () => (
-  $.ajax({method: 'GET', url: 'api/reviews'})
+export const fetchReviews = office_id => (
+  $.ajax({method: 'GET', url: 'api/reviews', data: {office_id}})
 );
 
 export const createReview = review => (

@@ -1,6 +1,7 @@
 import {connect} from 'react-redux';
 import {fetchReviews, createReview, updateReview, deleteReview} from '../../actions/review_actions';
-import Review from './review';
+import ReviewForm from './review_form';
+
 
 const mapStateToProps = ({session, reviews}) => ({
   currentUser: session.currentUser,
@@ -18,4 +19,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Review);
+)(ReviewForm);

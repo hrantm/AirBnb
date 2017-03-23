@@ -1,0 +1,49 @@
+.review-list {
+  max-width: 600px;
+  margin-left: 10%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-block {
+  border-bottom: 1px solid #2f4f4f;
+  width: 400px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 22px;
+  color: #2f4f4f;
+  font-weight: bolder;
+}
+
+.author-name {
+  text-align: right;
+  color: #ff7e82;
+  margin-bottom: 10px;
+}
+
+.reviews-title {
+  font-size: 36px;
+  color: #2f4f4f;
+  font-weight: bold;
+}
+
+.author-stars {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-review {
+  color: #ff7e82;
+}
+
+.button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-body {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

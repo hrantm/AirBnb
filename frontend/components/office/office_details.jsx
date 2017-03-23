@@ -1,6 +1,7 @@
 import React from 'react';
 import BookingFormContainer from '../booking/booking_form_container';
 import ReviewContainer from '../review/review_container';
+import ReviewFormContainer from '../review/review_form_container';
 
 class OfficeDetails extends React.Component {
   constructor(props) {
@@ -43,7 +44,8 @@ class OfficeDetails extends React.Component {
           </div>
             <BookingFormContainer office={this.props.offices}/>
         </div>
-        <ReviewContainer />
+        <ReviewContainer office={this.props.routeParams.office_id}/>
+        <ReviewFormContainer office={this.props.routeParams.office_id}/>
       </div>
     );
   }

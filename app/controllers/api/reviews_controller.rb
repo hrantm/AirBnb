@@ -27,7 +27,7 @@ class Api::ReviewsController < ApplicationController
   end
 
   def index
-    #reviews should just be the reviews for the currentUser
+    #reviews should just be the reviews for the currentOffice
     @reviews = Review.all
     render 'api/reviews/index'
   end

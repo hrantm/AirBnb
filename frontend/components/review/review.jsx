@@ -1,25 +1,62 @@
 import React from 'react';
 import {hashHistory} from 'react-router';
+import ReactStars from 'react-stars';
 
 class Review extends React.Component {
   constructor(props) {
     super(props);
+    this.renderDeleteButton = this.renderDeleteButton.bind(this);
   }
 
   componentDidMount(){
-    console.log('component fires');
-    this.props.fetchReviews();
+    // debugger
+    console.log(this.props.office);
+    this.props.fetchReviews(this.props.office);
   }
+  // <h1>{review.rating} Stars</h1>
+
+  renderDeleteButton(authorId, reviewId){
+    if (this.props.currentUser.id === authorId) {
+      return (
+        <div className='button-div'>
+          <div>
+          </div>
+          <button
+            className='delete-review'
+            onClick={() => this.props.deleteReview(reviewId)}>
+            Delete
+          </button>
+      </div>
+      );
+    }
+  }
+
+  // {this.renderDeleteButton(review.authorId, review.id)}
+  // {this.renderDeleteButton(review.authorId, review.id)}
+
 
   render(){
     console.log(this.props);
-    return(
-      <div>
-        {this.props.reviews.map(review => (
-          <h1>{review.body}</h1>
-        ))}
-      </div>
-    );
+    if (this.props.reviews) {
+      return(
+        <div className='review-list'>
+          <h1 className='reviews-title'>Reviews</h1>
+          {this.props.reviews.map(review => (
+            <div className='review-block'>
+              <div className='author-stars'>
+                  <ReactStars
+                    count={review.rating}
+                    edit='false'
+                    color1={'#ff7e82'}
+                    size={20}/>
+                <h1 className='author-name'>{review.author}</h1>
+              </div>
+                <h1 className='review-body'>{review.body}</h1>
+            </div>
+          ))}
+        </div>
+      );
+  }
   }
 }
 
