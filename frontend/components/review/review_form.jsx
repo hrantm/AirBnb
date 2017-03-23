@@ -11,7 +11,12 @@ class ReviewForm extends React.Component {
 
   handleSubmit(e){
     e.preventDefault();
-
+    this.props.createReview({
+      author_id: this.props.currentUser.id,
+      office_id: this.props.office,
+      rating: this.state.rating,
+      body: this.state.body
+    });
   }
 
   update(field){
