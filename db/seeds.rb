@@ -70,48 +70,64 @@ guest_limit: 2, desks: 2})
 #REMEMBER TO CHANGE TO HTTPS
 
 Office.create({owner_id: 2, location: 'New York', lat: 40.765663,
-lng: -73.972544, price: 125, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295115/pexels-photo-271560_sbon4f.jpg',
+lng: -73.972544, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295115/pexels-photo-271560_sbon4f.jpg',
 about_this: 'A wonderful workspace on the Upper East Side of Manhatten. The coffee was great, and the view was fantastic.',
 guest_limit: 3, desks: 3})
 
 Office.create({owner_id: 2, location: 'New York', lat: 40.753473,
-lng: -73.982551, price: 150, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295665/o_ndqv6g.jpg',
+lng: -73.982551, price: 150, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295665/o_ndqv6g.jpg',
 about_this: 'A great office right in the Midtown. Perfect place to hold some meetings or get some work done.',
 guest_limit: 5, desks: 5})
 
 Office.create({owner_id: 3, location: 'New York', lat: 40.689220,
-lng: -73.984022, price: 15, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295710/SetWidth1600-121121_LyonsOffice_skvdjg.jpg',
+lng: -73.984022, price: 15, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295710/SetWidth1600-121121_LyonsOffice_skvdjg.jpg',
 about_this: 'Awesome place to work. Right by Barclays Center.',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 5, location: 'New York', lat: 40.720461,
-lng: -74.000527, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295744/IMG_4159_1_mmgq29.jpg',
+lng: -74.000527, price: 185, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295744/IMG_4159_1_mmgq29.jpg',
 about_this: 'Premium location in Lower Manhatten. Close to public transit for easy transportation.',
 guest_limit: 8, desks: 8})
 
 Office.create({owner_id: 9, location: 'New York', lat: 40.678377,
-lng: -74.009368, price: 85, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295748/firm_profi-2.jpg.662x0_q70_crop-scale_ktwqfm.jpg',
+lng: -74.009368, price: 85, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295748/firm_profi-2.jpg.662x0_q70_crop-scale_ktwqfm.jpg',
 about_this: 'Beautiful office in the heart of Brooklyn. Free coffee!',
 guest_limit: 3, desks: 3})
 
 Office.create({owner_id: 4, location: 'San Francisco', lat: 37.761250,
-lng: -122.388632, price: 125, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295809/11ae4b83ec3a29e99310dfb7b08b9d25_t8bmtk.jpg',
+lng: -122.388632, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295809/11ae4b83ec3a29e99310dfb7b08b9d25_t8bmtk.jpg',
 about_this: 'Hipster office space in the Dog Patch. Come get some work done!',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 3, location: 'San Francisco', lat: 37.791380,
-lng: -122.401109, price: 165, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295823/f2a0bdf347a60af30a4771ce255d9f63_e2iomx.jpg',
+lng: -122.401109, price: 165, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295823/f2a0bdf347a60af30a4771ce255d9f63_e2iomx.jpg',
 about_this: 'Professional workspace in the Financial District. Less than 5 minutes from the Montgomery Bart Station.',
 guest_limit: 4, desks: 4})
 
 Office.create({owner_id: 6, location: 'San Francisco', lat: 37.755609,
-lng: -122.415388, price: 160, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295852/Keep-Your-Employees-Creative-With-These-Office-Design-Tips_m6umxq.jpg',
+lng: -122.415388, price: 160, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295852/Keep-Your-Employees-Creative-With-These-Office-Design-Tips_m6umxq.jpg',
 about_this: 'A great workspace in the Mission. Free gym included!',
 guest_limit: 1, desks: 1})
 
 Office.create({owner_id: 9, location: 'San Francisco', lat: 37.781077,
-lng: -122.411714, price: 135, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490295879/0f337388eceb2cffd89eec0dcc42cb2a_nigqyk.jpg',
+lng: -122.411714, price: 135, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490295879/0f337388eceb2cffd89eec0dcc42cb2a_nigqyk.jpg',
 about_this: 'Gorgeous workspace right on Market street. Open and modern design.',
+guest_limit: 2, desks: 2})
+
+
+Office.create({owner_id: 3, location: 'San Francisco', lat: 37.751681,
+lng: -122.426579, price: 110, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490306668/58fd3da1881f3a5586e3d2220b2015ff_jboeqa.jpg',
+about_this: 'Brand new office space in Noe Valley. Best coffee in town!',
+guest_limit: 3, desks: 3})
+
+Office.create({owner_id: 6, location: 'San Francisco', lat: 37.784959,
+lng: -122.404652, price: 250, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490306631/sky-office_05_q4lbrl.jpg',
+about_this: 'Modern office space in the heart of San Francisco. Right by union square!',
+guest_limit: 1, desks: 1})
+
+Office.create({owner_id: 9, location: 'San Francisco', lat: 37.780018,
+lng: -122.402162, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490306562/85993d1971f425a111adc6907ca478f1_yuynec.jpg',
+about_this: 'Exciting new space South Of Market. Best place to get work done in San Francisco!',
 guest_limit: 2, desks: 2})
 
 
