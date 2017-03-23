@@ -11,7 +11,7 @@ class SearchPage extends React.Component {
   render(){
 
     return (
-      <div>
+      <div className='search-div'>
         <SearchContainer />
         <h3 className='search-title'>{this.props.offices.length} Results</h3>
         <div className='results-map'>

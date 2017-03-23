@@ -33,6 +33,18 @@ class Api::OfficesController < ApplicationController
     render :index
   end
 
+  # def search
+  # Add searching for dates
+  #   if params[:search_params][:location] == ''
+  #     @offices = Office.all.where('guest_limit >= ?', params[:search_params][:guests])
+  #   else
+  #     @offices = Office.where('location LIKE ? AND guest_limit >= ?',
+  #      "%#{params[:search_params][:location].split(' ').map(&:downcase).map(&:capitalize).join(' ')}%",
+  #      params[:search_params][:guests].to_i)
+  #   end
+  #   render :index
+  # end
+
   private
 
   def office_params
