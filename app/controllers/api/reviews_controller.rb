@@ -20,9 +20,10 @@ class Api::ReviewsController < ApplicationController
   end
 
   def destroy
+    # debugger
     @review = Review.find(params[:id])
     @review.destroy
-    @reviews = Review.where(office_id: params[:id])
+    @reviews = Review.where(office_id: @review.office_id)
     render 'api/reviews/index'
   end
 
