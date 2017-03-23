@@ -44,8 +44,10 @@ class OfficeDetails extends React.Component {
           </div>
             <BookingFormContainer office={this.props.offices}/>
         </div>
-        <ReviewContainer office={this.props.routeParams.office_id}/>
-        <ReviewFormContainer office={this.props.routeParams.office_id}/>
+        <div className='reviews-and-form'>
+          <ReviewContainer office={this.props.routeParams.office_id}/>
+          <ReviewFormContainer office={this.props.routeParams.office_id}/>
+        </div>
       </div>
     );
   }

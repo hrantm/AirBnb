@@ -1,18 +1,21 @@
 .review-form {
   max-width: 600px;
-  margin-left: 10%;
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid #2f4f4f;
+  border-width: medium;
+  padding: 20px;
+  height: 250px;
 }
 
 .form-textarea {
   width: 400px;
-  height: 100px;
+  height: 150px;
   border: 1px solid #2f4f4f;
-  border-width: medium;
+  resize: none;
 }
 
 .review-submit {
@@ -36,4 +39,10 @@
   justify-content: space-between;
   width: 400px;
   margin-bottom: 10px;
+}
+
+.review-submit-container {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
 }

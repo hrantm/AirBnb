@@ -1,6 +1,5 @@
 .review-list {
   max-width: 600px;
-  margin-left: 10%;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -46,4 +45,14 @@
 .review-body {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.reviews-and-form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 3%;
+  min-width: 600px;
 }
