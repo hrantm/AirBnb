@@ -16,14 +16,16 @@ class ReviewForm extends React.Component {
       office_id: this.props.office,
       rating: this.state.rating,
       body: this.state.body
-    });
+    }).then(this.setState({rating: 5, body: ''}));
   }
 
   update(field){
     // debugger
-    return e => (
-      this.setState({[field]: e.target.value})
-    );
+    return e => {
+      // debugger
+      return(
+      this.setState({[field]: e.target ? e.target.value : e}));
+    };
   }
 
   render(){
@@ -39,11 +41,13 @@ class ReviewForm extends React.Component {
             size={24}
             half={false}
             onChange={this.update('rating')}
-            color2={'#ff7e82'} />
+            color2={'#ff7e82'}
+            value={this.state.rating}/>
         </div>
         <textarea
           className='form-textarea'
-          onChange={this.update('body')}/>
+          onChange={this.update('body')}
+          value={this.state.body}/>
         <div className='review-submit-container'>
           <div>
           </div>

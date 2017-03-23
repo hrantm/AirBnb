@@ -9,7 +9,7 @@ const mapStateToProps = ({session, reviews}) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchReviews: () => dispatch(fetchReviews()),
+  fetchReviews: (office_id) => dispatch(fetchReviews(office_id)),
   createReview: review => dispatch(createReview(review)),
   updateReview: review => dispatch(updateReview(review)),
   deleteReview: id => dispatch(deleteReview(id))

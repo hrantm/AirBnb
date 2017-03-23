@@ -16,7 +16,7 @@ class Review extends React.Component {
   // <h1>{review.rating} Stars</h1>
 
   renderDeleteButton(authorId, reviewId){
-    if (this.props.currentUser.id === authorId) {
+    if ((this.props.currentUser) && (this.props.currentUser.id === authorId)) {
       return (
         <div className='button-div'>
           <div>
@@ -46,12 +46,15 @@ class Review extends React.Component {
               <div className='author-stars'>
                   <ReactStars
                     count={review.rating}
+                    value={review.rating}
                     edit='false'
+                    color2={'#ff7e82'}
                     color1={'#ff7e82'}
                     size={20}/>
                 <h1 className='author-name'>{review.author}</h1>
               </div>
                 <h1 className='review-body'>{review.body}</h1>
+                {this.renderDeleteButton(review.authorId, review.id)}
             </div>
           ))}
         </div>

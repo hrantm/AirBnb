@@ -12,7 +12,7 @@ const ReviewReducer = (state = _initialState, action) => {
     // debugger
       return {
         reviews: action.reviews,
-        erros: []};
+        errors: []};
     case RECEIVE_REVIEW_ERRORS:
       const errors = action.errors;
         return merge({}, state, {
