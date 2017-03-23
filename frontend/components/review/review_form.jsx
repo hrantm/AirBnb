@@ -7,6 +7,8 @@ class ReviewForm extends React.Component {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.state = {rating: 0, body: ''};
+    this.handleErrors = this.handleErrors.bind(this);
+    this.notLoggedInMessage = this.notLoggedInMessage.bind(this);
   }
 
   handleSubmit(e){
@@ -28,12 +30,33 @@ class ReviewForm extends React.Component {
     };
   }
 
+  handleErrors(){
+    if (this.props.currentUser) {
+      return(
+        <div className='review-form-errors'>
+          {this.props.errors.map(error => (
+            <h1>{error}</h1>
+          ))}
+      </div>
+      );
+    }
+  }
+
+  notLoggedInMessage(){
+    if (!this.props.currentUser) {
+      return(
+        <h1 className='not-logged-message'>Not Logged In</h1>
+      );
+    }
+  }
+
   render(){
     console.log('Now its the form');
     console.log(this.props);
     console.log(this.state);
     return(
       <form className='review-form' onSubmit={this.handleSubmit}>
+        {this.handleErrors()}
         <div className='review-form-header'>
           <h1 className='review-form-title'>Add Review</h1>
           <ReactStars
@@ -53,8 +76,10 @@ class ReviewForm extends React.Component {
           </div>
           <input type='submit'
             value='Submit'
-            className='review-submit'/>
+            className='review-submit'
+            disabled={!this.props.currentUser}/>
       </div>
+      {this.notLoggedInMessage()}
       </form>
     );
   }
