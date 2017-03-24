@@ -126,9 +126,56 @@ about_this: 'Modern office space in the heart of San Francisco. Right by union s
 guest_limit: 1, desks: 1})
 
 Office.create({owner_id: 9, location: 'San Francisco', lat: 37.780018,
-lng: -122.402162, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490306562/85993d1971f425a111adc6907ca478f1_yuynec.jpg',
+lng: -122.402162, price: 185, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490306562/85993d1971f425a111adc6907ca478f1_yuynec.jpg',
 about_this: 'Exciting new space South Of Market. Best place to get work done in San Francisco!',
 guest_limit: 2, desks: 2})
+
+#NEW ONES
+
+Office.create({owner_id: 9, location: 'Oakland', lat: 37.807785,
+lng: -122.292555, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490324499/Devonshire_Sq_-_Offices-1_og26xh.jpg',
+about_this: 'Exciting new space on the west side of Oakland. Beautiful setting and easy access to transportation.',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 6, location: 'Oakland', lat: 37.800123,
+lng: -122.267838, price: 135, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490313303/brooklyn-heights-office-space-32_nrfus7.jpg',
+about_this: 'Great spot in Chinatown. The best area for work and awesome food!',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 2, location: 'Oakland', lat: 37.806283,
+lng: -122.266143, price: 85, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308496/hero-inwood_vt0dmz.jpg',
+about_this: 'A great workspace in downtown Oakland. Within walking distance of Bart.',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 9, location: 'Oakland', lat: 37.783245,
+lng: -122.226649, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308462/20140418-TelemetryJW-002_original_uqjo5e.jpg',
+about_this: 'Exciting new space in Fruitvale. Best place to get work done in Oakland!',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 1, location: 'Berkeley', lat: 37.867678,
+lng: -122.255043, price: 200, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308321/hudson-yards-nyc-10-hudson-yards-open-office-view-south-dv-022012_yf3fbz.jpg',
+about_this: 'Great modern space on the South Side of Berkeley. Just 2 blocks away from campus.',
+guest_limit: 1, desks: 1})
+
+Office.create({owner_id: 9, location: 'Berkeley', lat:37.872734,
+lng: -122.269505, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308220/3021752-slide-s-7-why-square-designed-its-new-offices-to-work-like-a-city_n5iqat.jpg',
+about_this: 'Best place to get work done in downtown Berkeley. Within walking distance of the Bart station.',
+guest_limit: 1, desks: 1})
+
+Office.create({owner_id: 8, location: 'Berkeley', lat: 37.875436,
+lng: -122.272109, price: 175, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308158/OG-office_ul5pbu.jpg',
+about_this: 'A great workspace on the North Side of Berkeley. Amazing coffee and staff!',
+guest_limit: 4, desks: 4})
+
+Office.create({owner_id: 9, location: 'Berkeley', lat: 37.866418,
+lng: -122.261761, price: 145, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490306816/20470653_yju7qt.jpg',
+about_this: 'Wonderful workspace on the South Side. Only 4 blocks from Asian Ghetto!!!',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 8, location: 'Berkeley', lat: 37.874241,
+lng: -122.269626, price: 125, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490324589/ro_search_record_office_fgo6bb.jpg',
+about_this: 'The best workspace in all of North Berkeley. If you want to get work done, you come here!',
+guest_limit: 3, desks: 3})
 
 
  Booking.create({author_id: 1, office_id: 5, start_date: Date.new(2017, 4, 3),
