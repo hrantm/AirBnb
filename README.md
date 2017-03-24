@@ -65,7 +65,14 @@ Bookings are rendered at /:id/bookings, filtered for the logged in user who can 
 
 Logged in users can leave reviews for offices. Review ratings are input and viewed as stars on the OfficeDetails page. Reviews are stored in the database with a user_id, spot_id, and a body.
 
-Reviews are rendered in the OfficeDetails component, filtered for that office.
+Reviews are rendered in the OfficeDetails component, filtered for that office. Filtering information was passed down from the query string.
+
+```
+<div className='reviews-and-form'>
+  <ReviewContainer office={this.props.routeParams.office_id}/>
+  <ReviewFormContainer office={this.props.routeParams.office_id}/>
+</div>
+```
 
 ##Future Directions for the Project
 
