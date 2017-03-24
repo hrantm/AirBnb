@@ -2,7 +2,7 @@
 [heroku link][heroku]
 [heroku]: https://air-bnb-office.herokuapp.com/#/
 
-Office BnB is a platform to connect you to available office space in your area. It is a web application, inspired by Airbnb, and built using Ruby on Rails on the backend, a PostgresSQL database, and React/Redux framework on the frontend.
+Office BnB is a platform to connect you to available office space in your area. It is a web application, inspired by AirBnB, and built using Ruby on Rails on the backend, a PostgresSQL database, and React/Redux framework on the frontend.
 
 ##Features and Implementation
 
@@ -33,3 +33,15 @@ Bookings are rendered at /:id/bookings, filtered for the logged in user who can 
 Logged in users can leave reviews for offices. Review ratings are input and viewed as stars on the OfficeDetails page. Reviews are stored in the database with a user_id, spot_id, and a body.
 
 Reviews are rendered in the OfficeDetails component, filtered for that office.
+
+##Future Directions for the Project
+
+In addition to the features already implemented, I plan to continue work on this project. The next steps for OfficeBnB are outlined below.
+
+###Infinite Scroll
+
+Add infinite scroll for bookings, and reviews.
+
+###Direct Messaging
+
+Allow users to send direct messages to the owner of each office and ask questions.

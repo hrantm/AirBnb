@@ -21,7 +21,9 @@ class Greeting extends React.Component {
 
     return (
       <div className='main-nav'>
-        <h1 className='logo' onClick={() => hashHistory.push('/')}>Office BnB</h1>
+        <div className='logo' onClick={() => hashHistory.push('/')}>
+            <img src='https://res.cloudinary.com/harvey93/image/upload/v1490387034/logo_zbyo8x.png' className='logo-image'/>
+        </div>
         <div className='buttons'>
           <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
           <button className='auth-button' onClick={() => hashHistory.push(`/${currentUser.id}/bookings`)}>Bookings</button>
@@ -53,7 +55,9 @@ class Greeting extends React.Component {
   loggedOut(){
     return (
       <div className='main-nav'>
-        <h1 className='logo' onClick={() => hashHistory.push('/')}>Office BnB</h1>
+          <div className='logo' onClick={() => hashHistory.push('/')}>
+              <img src='https://res.cloudinary.com/harvey93/image/upload/v1490387034/logo_zbyo8x.png' className='logo-image'/>
+          </div>
         <div className='buttons'>
           <button className='auth-button' onClick={this.toggleSessionForm('signup')}>Sign Up</button>
           <button className='auth-button' onClick={this.toggleSessionForm('login')}>Log In</button>

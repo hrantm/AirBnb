@@ -6,6 +6,9 @@
 .main-nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 1%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .logo {
@@ -76,6 +79,7 @@
   margin: 0;
   font-size: 16px;
   padding-right: 10px;
+  margin-top: 32px;
 }
 
 .auth-button {
@@ -108,4 +112,13 @@
 
 .mark-color {
   color: #ff7e82;
+}
+
+.logo-image{
+  height: 80px;
+  width: 40px;
+}
+
+.logo-div {
+  display: flex;
 }
