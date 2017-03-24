@@ -10,7 +10,6 @@ class Review extends React.Component {
 
   componentDidMount(){
     // debugger
-    console.log(this.props.office);
     this.props.fetchReviews(this.props.office);
   }
   // <h1>{review.rating} Stars</h1>
@@ -36,7 +35,6 @@ class Review extends React.Component {
 
 
   render(){
-    console.log(this.props);
     if (this.props.reviews) {
       return(
         <div className='review-list'>

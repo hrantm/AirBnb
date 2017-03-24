@@ -17,7 +17,6 @@ class BookingForm extends React.Component {
   }
 
   calcCost() {
-    // console.log('outer');
     if ((this.state.startDate !== null) && (this.state.endDate !== null)){
       const ms = this.state.endDate.diff(this.state.startDate);
       this.days = moment.duration(ms).asDays() + 1;
@@ -91,9 +90,6 @@ class BookingForm extends React.Component {
 
 
   render(){
-    // console.log(this.state.startDate._d);
-    // console.log(this.state);
-    // console.log(this.props);
     return (
     <form className='booking-form' onSubmit={this.handleSubmit}>
       {this.state.errors.map(error => (

@@ -51,9 +51,6 @@ class ReviewForm extends React.Component {
   }
 
   render(){
-    console.log('Now its the form');
-    console.log(this.props);
-    console.log(this.state);
     return(
       <form className='review-form' onSubmit={this.handleSubmit}>
         {this.handleErrors()}
