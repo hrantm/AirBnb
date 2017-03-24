@@ -1,14 +1,14 @@
-#OfficeBnB
+# OfficeBnB
 [heroku link][heroku]
 [heroku]: https://air-bnb-office.herokuapp.com/#/
 
 Office BnB is a platform to connect you to available office space in your area. It is a web application, inspired by AirBnB, and built using Ruby on Rails on the backend, a PostgresSQL database, and React/Redux framework on the frontend.
 
-##Features and Implementation
+## Features and Implementation
 
 ![image of home](docs/images/Home.png)
 
-###Authentication
+### Authentication
 
 ![image of home](docs/images/Signup-Modal.png)
 
@@ -28,7 +28,7 @@ def is_password?(password)
 end
 ```
 
-###Offices
+### Offices
 
 ![image of home](docs/images/Office-Details.png)
 
@@ -41,7 +41,7 @@ In the OfficeDetails component, offices are rendered listing all information abo
 
 Offices are also rendered at /search which makes an API call to fetch offices filtered by availability, price, and location.
 
-###Office Search with google maps
+### Office Search with google maps
 
 ![image of home](docs/images/Search-Results.png)
 
@@ -49,7 +49,7 @@ There are two active search bars, one at / and another at /search that allow for
 
 At /search, a google map is rendered with markers for each spot whose coordinates lie within the bounds of the map. The map actively filters the rendered spots as the map is moved or zoomed.
 
-###Bookings
+### Bookings
 
 ![image of home](docs/images/Booking-Form.png)
 
@@ -59,7 +59,7 @@ Users can book office space by making bookings which are stored in the database.
 
 Bookings are rendered at /:id/bookings, filtered for the logged in user who can view and cancel their bookings.
 
-###Reviews
+### Reviews
 
 ![image of home](docs/images/Review-Form.png)
 
@@ -84,14 +84,14 @@ export const fetchReviews = office_id => (
 @reviews = Review.where(office_id: params[:office_id])
 render 'api/reviews/index'
 ```
-##Future Directions for the Project
+## Future Directions for the Project
 
 In addition to the features already implemented, I plan to continue work on this project. The next steps for OfficeBnB are outlined below.
 
-###Infinite Scroll
+### Infinite Scroll
 
 Add infinite scroll for bookings, and reviews.
 
-###Direct Messaging
+### Direct Messaging
 
 Allow users to send direct messages to the owner of each office and ask questions.
