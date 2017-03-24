@@ -43,7 +43,7 @@ Offices are also rendered at /search which makes an API call to fetch offices fi
 
 ###Office Search with google maps
 
-![image of home](docs/images/search-results.png)
+![image of home](docs/images/Search-Results.png)
 
 There are two active search bars, one at / and another at /search that allow for location, date entry as well as number of guests. When the search form is submitted on the home page, users are redirected to the search page where their filtered results are available.
 
