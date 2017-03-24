@@ -257,51 +257,446 @@ Review.create({author_id: 6, office_id: 2, rating: 2,
   body: 'Ehh, not the best :('})
 
 #Office 3
-Review.create({author_id: 7, office_id: 4, rating: 5,
+Review.create({author_id: 7, office_id: 3, rating: 5,
   body: 'The best experience I have ever had using Office Bnb.'})
 
-Review.create({author_id: 8, office_id: 4, rating: 3,
+Review.create({author_id: 8, office_id: 3, rating: 3,
   body: 'The space is amazing, but the staff can be rude at times.'})
 
-Review.create({author_id: 9, office_id: 4, rating: 1,
+Review.create({author_id: 9, office_id: 3, rating: 1,
   body: 'Hate the staff. Ugghh!'})
 
-Review.create({author_id: 2, office_id: 4, rating: 3,
+Review.create({author_id: 2, office_id: 3, rating: 3,
   body: 'Not bad, a little noisier than I would have liked.'})
 
-Review.create({author_id: 3, office_id: 4, rating: 5,
+Review.create({author_id: 3, office_id: 3, rating: 5,
   body: 'The coffee here is sooooo good!'})
 
 #Office 4
-Review.create({author_id: 4, office_id: 5, rating: 1,
+Review.create({author_id: 4, office_id: 4, rating: 1,
   body: 'Traaaaasshhhhhhh. Hated it!'})
 
-Review.create({author_id: 5, office_id: 5, rating: 2,
+Review.create({author_id: 5, office_id: 4, rating: 2,
   body: 'Do not like it here at all. Would literally go to a public library!'})
 
-Review.create({author_id: 6, office_id: 5, rating: 2,
+Review.create({author_id: 6, office_id: 4, rating: 2,
   body: 'Hate this place, I get more work done at Starbucks!'})
 
 #Office 5
-Review.create({author_id: 7, office_id: 6, rating: 5,
+Review.create({author_id: 7, office_id: 5, rating: 5,
   body: 'Wow, I really cannot think of a time that I was more productive!'})
 
-Review.create({author_id: 8, office_id: 6, rating: 4,
+Review.create({author_id: 8, office_id: 5, rating: 4,
   body: 'One of the gems in the city. Great coffee, awesome staff!'})
 
-Review.create({author_id: 9, office_id: 6, rating: 5,
+Review.create({author_id: 9, office_id: 5, rating: 5,
   body: 'I love this place!'})
 
-Review.create({author_id: 2, office_id: 6, rating: 4,
+Review.create({author_id: 2, office_id: 5, rating: 4,
   body: 'All the reviews are right. This place was awesome!'})
 
 #Office 6
-Review.create({author_id: 7, office_id: 4, rating: 3,
+Review.create({author_id: 7, office_id: 6, rating: 3,
   body: 'Not the best office space, but good price.'})
 
-Review.create({author_id: 8, office_id: 4, rating: 5,
+Review.create({author_id: 8, office_id: 6, rating: 5,
   body: 'My favorite place by far.'})
 
-#Office 6
-Review.create({author_id: 9, office_id: 4, rating: 3,
+#Office 7
+Review.create({author_id: 9, office_id: 7, rating: 3,
   body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 1, office_id: 7, rating: 5,
+  body: 'Love this place. So Cheap!'})
+
+#Office 8
+Review.create({author_id: 9, office_id: 8, rating: 5,
+  body: 'First time using Office Bnb. Great Experience!'})
+
+Review.create({author_id: 1, office_id: 8, rating: 4,
+  body: 'Love this place.'})
+
+Review.create({author_id: 2, office_id: 8, rating: 5,
+  body: 'Never been so productive!'})
+
+Review.create({author_id: 3, office_id: 8, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+
+#Office 9
+Review.create({author_id: 9, office_id: 9, rating: 3,
+  body: 'Ehh, not bad, there are definitely better options'})
+
+Review.create({author_id: 2, office_id: 9, rating: 4,
+  body: 'Love the staff!'})
+
+#Office 10
+Review.create({author_id: 3, office_id: 10, rating: 1,
+  body: 'The staff is insanely rude!'})
+
+Review.create({author_id: 4, office_id: 10, rating: 1,
+  body: 'Wow, worst place ever!'})
+
+Review.create({author_id: 5, office_id: 10, rating: 2,
+  body: 'Garbage.'})
+
+
+#Office 11
+Review.create({author_id: 6, office_id: 11, rating: 4,
+  body: 'Love this place'})
+
+Review.create({author_id: 7, office_id: 11, rating: 5,
+  body: 'Great place to really work.'})
+
+Review.create({author_id: 8, office_id: 11, rating: 4,
+  body: 'Delicious coffee.'})
+
+
+#Office 12
+Review.create({author_id: 9, office_id: 12, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 2, office_id: 12, rating: 2,
+  body: 'NEVER comming back.'})
+
+Review.create({author_id: 3, office_id: 12, rating: 1,
+  body: 'How do I give 0 stars?'})
+
+Review.create({author_id: 4, office_id: 12, rating: 1,
+  body: 'Just... go to Starbucks or something.'})
+
+
+
+#Office 13
+Review.create({author_id: 5, office_id: 13, rating: 3,
+  body: 'Not too bad.'})
+
+Review.create({author_id: 6, office_id: 13, rating: 4,
+  body: 'First time here. Pleasantly surprised.'})
+
+Review.create({author_id: 7, office_id: 13, rating: 5,
+  body: 'Awesome workspace, great staff.'})
+
+
+#Office 14
+Review.create({author_id: 8, office_id: 14, rating: 3,
+  body: 'Too noisey for me. This is supposed to be an office!'})
+
+Review.create({author_id: 9, office_id: 14, rating: 1,
+  body: 'Got more work done on the train ride here.'})
+
+Review.create({author_id: 1, office_id: 14, rating: 2,
+  body: 'Fire everybody pls.'})
+
+Review.create({author_id: 2, office_id: 14, rating: 1,
+  body: '0 stars, LITERALLY 0 stars.'})
+
+
+#Office 15
+Review.create({author_id: 3, office_id: 15, rating: 3,
+  body: 'Too expensive.'})
+
+Review.create({author_id: 4, office_id: 15, rating: 4,
+  body: 'I loved it. Internet was a little slow.'})
+
+Review.create({author_id: 5, office_id: 15, rating: 5,
+  body: 'My favorite place.'})
+
+
+#Office 16
+Review.create({author_id: 6, office_id: 16, rating: 5,
+  body: 'Loved it.'})
+
+Review.create({author_id: 7, office_id: 16, rating: 3,
+  body: 'Not bad.'})
+
+
+#Office 17
+Review.create({author_id: 8, office_id: 17, rating: 4,
+  body: 'Really great spot. Wish the coffee was better.'})
+
+Review.create({author_id: 9, office_id: 17, rating: 4,
+  body: 'I had a good time.'})
+
+Review.create({author_id: 2, office_id: 17, rating: 3,
+  body: 'First guy is right, coffee was trash.'})
+
+Review.create({author_id: 3, office_id: 17, rating: 5,
+  body: 'lool I never drink coffee :)'})
+
+
+
+#Office 18
+Review.create({author_id: 4, office_id: 18, rating: 4,
+  body: 'I like this place a lot.'})
+
+Review.create({author_id: 5, office_id: 18, rating: 5,
+  body: 'Woah so productive today!!!'})
+
+Review.create({author_id: 6, office_id: 18, rating: 5,
+  body: 'Recommended by a friend to come here. Was not dissapointed!'})
+
+Review.create({author_id: 7, office_id: 18, rating: 5,
+  body: 'Love this place'})
+
+
+#Office 19
+Review.create({author_id: 8, office_id: 19, rating: 3,
+  body: 'Could have been better.'})
+
+Review.create({author_id: 9, office_id: 19, rating: 3,
+  body: 'How is the internet this slow?????'})
+
+
+#Office 20
+Review.create({author_id: 1, office_id: 20, rating: 1,
+  body: 'Literally no intenet.'})
+
+Review.create({author_id: 2, office_id: 20, rating: 1,
+  body: 'Had to hot spot to even use email.'})
+
+Review.create({author_id: 3, office_id: 20, rating: 2,
+  body: 'Wow, nothing works here.'})
+
+Review.create({author_id: 4, office_id: 20, rating: 1,
+  body: 'Money back pls.'})
+
+#Office 21
+Review.create({author_id: 5, office_id: 21, rating: 4,
+  body: 'This place is awesome!'})
+
+Review.create({author_id: 6, office_id: 21, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 7, office_id: 21, rating: 4,
+  body: 'I will for sure be comming back.'})
+
+
+#Office 22
+Review.create({author_id: 8, office_id: 22, rating: 3,
+  body: 'Slow internet. Coffee was gross.'})
+
+Review.create({author_id: 9, office_id: 22, rating: 3,
+  body: 'Wifi was non existent.'})
+
+Review.create({author_id: 2, office_id: 22, rating: 4,
+  body: 'They have for sure gotten better.'})
+
+Review.create({author_id: 3, office_id: 22, rating: 4,
+  body: 'Gave them a chance, not bad at all.'})
+
+
+#Office 23
+Review.create({author_id: 4, office_id: 23, rating: 5,
+  body: 'WOW!'})
+
+Review.create({author_id: 5, office_id: 23, rating: 5,
+  body: 'Its such a pretty office, oh my god!!'})
+
+Review.create({author_id: 6, office_id: 23, rating: 5,
+  body: 'I LOVE this place!'})
+
+
+#Office 24
+Review.create({author_id: 7, office_id: 24, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 8, office_id: 24, rating: 2,
+  body: 'Could be better.'})
+
+Review.create({author_id: 9, office_id: 24, rating: 1,
+  body: 'Traaaaasshhhhhhh!'})
+
+
+#Office 25
+Review.create({author_id: 2, office_id: 25, rating: 3,
+  body: 'Good price.'})
+
+Review.create({author_id: 3, office_id: 25, rating: 4,
+  body: 'One of my favorites'})
+
+
+#Office 26
+Review.create({author_id: 4, office_id: 26, rating: 3,
+  body: 'Not the best.'})
+
+
+Review.create({author_id: 5, office_id: 26, rating: 2,
+  body: 'Staff is incompetent.'})
+
+
+Review.create({author_id: 6, office_id: 26, rating: 2,
+  body: 'This place is not great.'})
+
+
+#Office 27
+Review.create({author_id: 7, office_id: 27, rating: 4,
+  body: 'One of my favorites for sure!'})
+
+Review.create({author_id: 8, office_id: 27, rating: 5,
+  body: 'Got so much done :)'})
+
+Review.create({author_id: 9, office_id: 27, rating: 5,
+  body: 'Great staff.'})
+
+Review.create({author_id: 2, office_id: 27, rating: 5,
+  body: 'Internet is soooo fast!'})
+
+#Office 28
+Review.create({author_id: 3, office_id: 28, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 4, office_id: 28, rating: 2,
+  body: 'Not the best.'})
+
+Review.create({author_id: 5, office_id: 28, rating: 2,
+  body: 'Could be a lot better.'})
+
+
+#Office 29
+Review.create({author_id: 6, office_id: 29, rating: 5,
+  body: 'Best place in the city.'})
+
+Review.create({author_id: 7, office_id: 29, rating: 5,
+  body: 'I wish I could give 10 stars!'})
+
+Review.create({author_id: 8, office_id: 29, rating: 5,
+  body: 'My favorite place to work in the city.'})
+
+#Office 30
+Review.create({author_id: 9, office_id: 30, rating: 1,
+  body: 'Coffee sucks, to expensive, closes too early.'})
+
+Review.create({author_id: 2, office_id: 30, rating: 1,
+  body: 'They do nothing well.'})
+
+Review.create({author_id: 3, office_id: 30, rating: 1,
+  body: 'Cannot beleive they charge for this.'})
+
+Review.create({author_id: 4, office_id: 30, rating: 1,
+  body: 'Money back pls.'})
+
+
+#Office 31
+Review.create({author_id: 5, office_id: 31, rating: 5,
+  body: 'How do I give 10 stars?'})
+
+Review.create({author_id: 6, office_id: 31, rating: 4,
+  body: 'Love this place.'})
+
+Review.create({author_id: 7, office_id: 31, rating: 5,
+  body: 'Staff is genuinely soooo helpful.'})
+
+Review.create({author_id: 8, office_id: 31, rating: 4,
+  body: 'One of my favorites.'})
+
+
+#Office 32
+Review.create({author_id: 9, office_id: 32, rating: 2,
+  body: 'So many better options in the city.'})
+
+Review.create({author_id: 2, office_id: 32, rating: 3,
+  body: 'Price matches service.'})
+
+Review.create({author_id: 3, office_id: 32, rating: 2,
+  body: 'Yea its basically trash.'})
+
+#Office 33
+Review.create({author_id: 4, office_id: 33, rating: 4,
+  body: 'I really like this place.'})
+
+Review.create({author_id: 5, office_id: 33, rating: 3,
+  body: 'Not bad.'})
+
+
+#Office 34
+Review.create({author_id: 6, office_id: 34, rating: 5,
+  body: 'This is my favorite place to work in the city.'})
+
+Review.create({author_id: 7, office_id: 34, rating: 5,
+  body: 'I wish I could just live here.'})
+
+Review.create({author_id: 8, office_id: 34, rating: 4,
+  body: 'Internet is so fast!'})
+
+Review.create({author_id: 9, office_id: 34, rating: 4,
+  body: 'Great service!'})
+
+
+#Office 35
+Review.create({author_id: 2, office_id: 35, rating: 3,
+  body: 'Could have for sure been better.'})
+
+Review.create({author_id: 3, office_id: 35, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 4, office_id: 35, rating: 3,
+  body: 'Kind of mediocre.'})
+
+#Office 36
+Review.create({author_id: 5, office_id: 36, rating: 1,
+  body: 'Intenet does not work at all. Coffee tastes like garbage, and the staff is rude.'})
+
+Review.create({author_id: 6, office_id: 36, rating: 2,
+  body: 'Not comming back ever.'})
+
+Review.create({author_id: 7, office_id: 36, rating: 1,
+  body: 'The staff is literally just yelling and gossibbing in the background. This is supposed to be an office!!??'})
+
+Review.create({author_id: 8, office_id: 36, rating: 2,
+  body: 'Worst expericen on Office BnB so far.'})
+
+Review.create({author_id: 9, office_id: 36, rating: 1,
+  body: 'Should be free tbh.'})
+
+
+#Office 37
+Review.create({author_id: 2, office_id: 37, rating: 3,
+  body: 'Not the worst, not the best.'})
+
+Review.create({author_id: 3, office_id: 37, rating: 3,
+  body: 'Could be better.'})
+
+Review.create({author_id: 4, office_id: 37, rating: 5,
+  body: 'Idc what anyone says, I love this place.'})
+
+
+#Office 38
+Review.create({author_id: 5, office_id: 38, rating: 1,
+  body: 'Wow, they do nothing well.'})
+
+Review.create({author_id: 6, office_id: 38, rating: 1,
+  body: 'So many better options in the city, avoid at all costs'})
+
+Review.create({author_id: 7, office_id: 38, rating: 5,
+  body: 'This place is so great!.'})
+
+Review.create({author_id: 5, office_id: 38, rating: 1,
+  body: 'This guy ^ probably works for them or something. Trust me its trash.'})
+
+
+#Office 39
+Review.create({author_id: 8, office_id: 39, rating: 5,
+  body: 'Love this place.'})
+
+Review.create({author_id: 9, office_id: 39, rating: 4,
+  body: 'One of the my favorites for sure. I got so much work done.'})
+
+Review.create({author_id: 2, office_id: 39, rating: 5,
+  body: 'Gave them a chance. Not dissapointed :)'})
+
+#Office 40
+Review.create({author_id: 9, office_id: 40, rating: 5,
+  body: 'I love the staff here.'})
+
+Review.create({author_id: 9, office_id: 40, rating: 4,
+  body: 'Internet is blazing fast.'})
+
+Review.create({author_id: 9, office_id: 40, rating: 5,
+  body: 'Coffee was soo good, and the staff is amazing.'})
+
+Review.create({author_id: 9, office_id: 40, rating: 4,
+  body: 'I will for sure be comming back here.'})
+
+Review.create({author_id: 9, office_id: 40, rating: 3,
+  body: 'Not the best office space, but will give another chance.'})
