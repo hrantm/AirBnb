@@ -6,11 +6,11 @@ Office BnB is a platform to connect you to available office space in your area. 
 
 ##Features and Implementation
 
-![image of home](docs/images/home.png)
+![image of home](docs/images/Home.png)
 
 ###Authentication
 
-![image of home](docs/images/signup-modal.png)
+![image of home](docs/images/Signup-Modal.png)
 
 
 User Log In and Sign Up are handled by a modal that will pop up should the user interact with the Header component.
