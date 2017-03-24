@@ -4,8 +4,6 @@ export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
 export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
 
 export const fetchReviews = (office) => dispatch => {
-  // console.log(office);
-  // debugger
   return (
     ReviewAPIUtil.fetchReviews(office)
       .then(reviews => dispatch(receiveReviews(reviews)),
