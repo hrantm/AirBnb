@@ -133,49 +133,99 @@ guest_limit: 2, desks: 2})
 #NEW ONES
 
 Office.create({owner_id: 9, location: 'Oakland', lat: 37.807785,
-lng: -122.292555, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490324499/Devonshire_Sq_-_Offices-1_og26xh.jpg',
+lng: -122.292555, price: 185, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490324499/Devonshire_Sq_-_Offices-1_og26xh.jpg',
 about_this: 'Exciting new space on the west side of Oakland. Beautiful setting and easy access to transportation.',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 6, location: 'Oakland', lat: 37.800123,
-lng: -122.267838, price: 135, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490313303/brooklyn-heights-office-space-32_nrfus7.jpg',
+lng: -122.267838, price: 135, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490313303/brooklyn-heights-office-space-32_nrfus7.jpg',
 about_this: 'Great spot in Chinatown. The best area for work and awesome food!',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 2, location: 'Oakland', lat: 37.806283,
-lng: -122.266143, price: 85, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308496/hero-inwood_vt0dmz.jpg',
+lng: -122.266143, price: 85, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490308496/hero-inwood_vt0dmz.jpg',
 about_this: 'A great workspace in downtown Oakland. Within walking distance of Bart.',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 9, location: 'Oakland', lat: 37.783245,
-lng: -122.226649, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308462/20140418-TelemetryJW-002_original_uqjo5e.jpg',
+lng: -122.226649, price: 185, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490308462/20140418-TelemetryJW-002_original_uqjo5e.jpg',
 about_this: 'Exciting new space in Fruitvale. Best place to get work done in Oakland!',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 1, location: 'Berkeley', lat: 37.867678,
-lng: -122.255043, price: 200, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308321/hudson-yards-nyc-10-hudson-yards-open-office-view-south-dv-022012_yf3fbz.jpg',
+lng: -122.255043, price: 200, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490308321/hudson-yards-nyc-10-hudson-yards-open-office-view-south-dv-022012_yf3fbz.jpg',
 about_this: 'Great modern space on the South Side of Berkeley. Just 2 blocks away from campus.',
 guest_limit: 1, desks: 1})
 
 Office.create({owner_id: 9, location: 'Berkeley', lat:37.872734,
-lng: -122.269505, price: 185, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308220/3021752-slide-s-7-why-square-designed-its-new-offices-to-work-like-a-city_n5iqat.jpg',
+lng: -122.269505, price: 185, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490308220/3021752-slide-s-7-why-square-designed-its-new-offices-to-work-like-a-city_n5iqat.jpg',
 about_this: 'Best place to get work done in downtown Berkeley. Within walking distance of the Bart station.',
 guest_limit: 1, desks: 1})
 
 Office.create({owner_id: 8, location: 'Berkeley', lat: 37.875436,
-lng: -122.272109, price: 175, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490308158/OG-office_ul5pbu.jpg',
+lng: -122.272109, price: 175, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490308158/OG-office_ul5pbu.jpg',
 about_this: 'A great workspace on the North Side of Berkeley. Amazing coffee and staff!',
 guest_limit: 4, desks: 4})
 
 Office.create({owner_id: 9, location: 'Berkeley', lat: 37.866418,
-lng: -122.261761, price: 145, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490306816/20470653_yju7qt.jpg',
+lng: -122.261761, price: 145, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490306816/20470653_yju7qt.jpg',
 about_this: 'Wonderful workspace on the South Side. Only 4 blocks from Asian Ghetto!!!',
 guest_limit: 2, desks: 2})
 
 Office.create({owner_id: 8, location: 'Berkeley', lat: 37.874241,
-lng: -122.269626, price: 125, image_url: 'http://res.cloudinary.com/harvey93/image/upload/v1490324589/ro_search_record_office_fgo6bb.jpg',
+lng: -122.269626, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490324589/ro_search_record_office_fgo6bb.jpg',
 about_this: 'The best workspace in all of North Berkeley. If you want to get work done, you come here!',
 guest_limit: 3, desks: 3})
+
+#New Ones
+
+Office.create({owner_id: 8, location: 'San Jose', lat: 37.292563,
+lng: -121.837333, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490368849/568764_7977e44fea574be9a5957633774271a6-mv2_d_3600_2400_s_4_2.jpg_srz_1515_782_85_22_0.50_1.20_0_wcdvje.jpg',
+about_this: 'Modern, open office space in South San Jose. Come in and get some work done!',
+guest_limit: 1, desks: 1})
+
+Office.create({owner_id: 9, location: 'San Jose', lat: 37.334613,
+lng: -121.824973, price: 145, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490368804/568764_030220eeb9764f9499638d4df7df168c.jpg_srz_1520_1013_85_22_0.50_1.20_0_pqxtcy.jpg',
+about_this: 'Great new workspace in East San Jose. Free gym and coffe!',
+guest_limit: 3, desks: 3})
+
+Office.create({owner_id: 1, location: 'San Jose', lat: 37.382642,
+lng: -121.912864, price: 165, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490368770/2494_037D_ttxqd2.jpg',
+about_this: 'The best workspace in all of North San Jose. If you want to get work done, you come here!',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 2, location: 'San Jose', lat: 37.328156,
+lng: -121.908033, price: 115, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490368582/airbnb-dublin-office-interiors-ireland-offices_dezeen_hero01_lqxgku.jpg',
+about_this: 'Great workspace in Downtown San Jose. Free coffee!',
+guest_limit: 3, desks: 3})
+
+Office.create({owner_id: 3, location: 'San Jose', lat: 37.330994,
+lng: -121.904134, price: 225, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490364044/wework-wonderbread_wvf736.jpg',
+about_this: 'The best workspace in all of San Jose. Come and get some work done!',
+guest_limit: 3, desks: 3})
+
+Office.create({owner_id: 4, location: 'San Jose', lat: 37.327946,
+lng: -121.901490, price: 175, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490364019/57a6a9203ffe5244a130c13d2aebd360_bekprf.jpg',
+about_this: 'Modern open space in Downtown San Jose. Close to cal train for easy access to transportation!',
+guest_limit: 1, desks: 1})
+
+Office.create({owner_id: 5, location: 'San Jose', lat: 37.350938,
+lng: -121.889813, price: 255, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490364008/herzliya-office-space-37_fmvis8.jpg',
+about_this: 'Beautiful office space in Japan Town. We have the best staff in the world!',
+guest_limit: 2, desks: 2})
+
+Office.create({owner_id: 6, location: 'San Jose', lat: 37.320832,
+lng: -121.876188, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490363918/7bb8544b2b4a7ae5bd96b045f0eef54b_erx09h.jpg',
+about_this: 'New workspace on the South Side of San Jose. Join us and get some work done!',
+guest_limit: 4, desks: 4})
+
+Office.create({owner_id: 7, location: 'San Jose', lat: 37.377912,
+lng: -121.915766, price: 125, image_url: 'https://res.cloudinary.com/harvey93/image/upload/v1490363874/ebay-Office-Design_mhdn2i.jpg',
+about_this: 'Brand new office on the North Side. Free coffee!',
+guest_limit: 3, desks: 3})
+
+
+
 
 
  Booking.create({author_id: 1, office_id: 5, start_date: Date.new(2017, 4, 3),
@@ -187,11 +237,71 @@ guest_limit: 3, desks: 3})
  Booking.create({author_id: 1, office_id: 7, start_date: Date.new(2017, 5, 3),
     end_date: Date.new(2017, 6, 10)})
 
-Review.create({author_id: 1, office_id: 2, rating: 4,
-  body: 'I had a wonderful time working here.'})
 
+#Office 1
 Review.create({author_id: 2, office_id: 1, rating: 1,
   body: 'What a waste of time. Literally got nothing done, and the coffee machine did not work!'})
 
-Review.create({author_id: 1, office_id: 4, rating: 5,
+Review.create({author_id: 3, office_id: 1, rating: 5,
+  body: 'I had an amazing experience. The staff was so accomodating!'})
+
+Review.create({author_id: 4, office_id: 1, rating: 3,
+  body: 'Could have been better, but I got a lot of work done!'})
+
+
+#Office 2
+Review.create({author_id: 5, office_id: 2, rating: 4,
+  body: 'One of my favorite places to hold meetings!'})
+
+Review.create({author_id: 6, office_id: 2, rating: 2,
+  body: 'Ehh, not the best :('})
+
+#Office 3
+Review.create({author_id: 7, office_id: 4, rating: 5,
   body: 'The best experience I have ever had using Office Bnb.'})
+
+Review.create({author_id: 8, office_id: 4, rating: 3,
+  body: 'The space is amazing, but the staff can be rude at times.'})
+
+Review.create({author_id: 9, office_id: 4, rating: 1,
+  body: 'Hate the staff. Ugghh!'})
+
+Review.create({author_id: 2, office_id: 4, rating: 3,
+  body: 'Not bad, a little noisier than I would have liked.'})
+
+Review.create({author_id: 3, office_id: 4, rating: 5,
+  body: 'The coffee here is sooooo good!'})
+
+#Office 4
+Review.create({author_id: 4, office_id: 5, rating: 1,
+  body: 'Traaaaasshhhhhhh. Hated it!'})
+
+Review.create({author_id: 5, office_id: 5, rating: 2,
+  body: 'Do not like it here at all. Would literally go to a public library!'})
+
+Review.create({author_id: 6, office_id: 5, rating: 2,
+  body: 'Hate this place, I get more work done at Starbucks!'})
+
+#Office 5
+Review.create({author_id: 7, office_id: 6, rating: 5,
+  body: 'Wow, I really cannot think of a time that I was more productive!'})
+
+Review.create({author_id: 8, office_id: 6, rating: 4,
+  body: 'One of the gems in the city. Great coffee, awesome staff!'})
+
+Review.create({author_id: 9, office_id: 6, rating: 5,
+  body: 'I love this place!'})
+
+Review.create({author_id: 2, office_id: 6, rating: 4,
+  body: 'All the reviews are right. This place was awesome!'})
+
+#Office 6
+Review.create({author_id: 7, office_id: 4, rating: 3,
+  body: 'Not the best office space, but good price.'})
+
+Review.create({author_id: 8, office_id: 4, rating: 5,
+  body: 'My favorite place by far.'})
+
+#Office 6
+Review.create({author_id: 9, office_id: 4, rating: 3,
+  body: 'Not the best office space, but good price.'})
