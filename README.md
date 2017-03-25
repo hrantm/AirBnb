@@ -15,7 +15,7 @@ Office BnB is a platform to connect you to available office space in your area. 
 
 User Log In and Sign Up are handled by a modal that will pop up should the user interact with the Header component.
 
-In order to make sure that all user information is kept safe. Passwords are never actually stored in the database. When a user signs up, their password is salted and put through a hashing function from the BCrypt library 10 times. Only the result of that hashing function as well as the added salt is saved in the database as a password digest. When the user tries to log in again, that whole process must be repeated and they will only authenticated if the result of the hashing function matches the password digest that is associated with their email.
+In order to make sure that all user information is kept safe. Passwords are never actually stored in the database. When a user signs up, their password is salted and put through a hashing function from the BCrypt library 10 times. Only the result of that hashing function as well as the added salt is saved in the database as a password digest. When the user tries to log in again, that whole process must be repeated and the will only be authenticated if the result of the hashing function matches the password digest that is associated with their email.
 
 ```
 def password=(password)
