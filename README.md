@@ -1,6 +1,7 @@
 # OfficeBnB
 
-[Live Site]: (https://air-bnb-office.herokuapp.com/#/)
+[heroku]: (https://air-bnb-office.herokuapp.com/#/)
+[live site](http://www.robinbanks.herokuapp.com)
 
 Office BnB is a platform to connect you to available office space in your area. It is a web application, inspired by AirBnB, and built using Ruby on Rails on the backend, a PostgresSQL database, and React/Redux framework on the frontend.
 
