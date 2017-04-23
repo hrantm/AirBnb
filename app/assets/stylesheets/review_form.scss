@@ -1,5 +1,5 @@
 .review-form {
-  max-width: 600px;
+  max-width: 400px;
   margin-top: 20px;
   margin-bottom: 30px;
   display: flex;
@@ -12,7 +12,7 @@
 }
 
 .form-textarea {
-  width: 400px;
+  width: 300px;
   height: 150px;
   border: 1px solid #2f4f4f;
   resize: none;
@@ -37,14 +37,14 @@
 .review-form-header {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 300px;
   margin-bottom: 10px;
 }
 
 .review-submit-container {
   display: flex;
   justify-content: space-between;
-  width: 400px;
+  width: 378px;
 }
 
 .review-form-errors {

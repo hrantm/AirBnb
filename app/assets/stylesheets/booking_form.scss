@@ -24,7 +24,8 @@
   border: 1px solid #2f4f4f;
   border-width: medium;
   height: 400px;
-  width: 318px;
+  min-width: 418px;
+  align-items: center;
 }
 
 .booking-form-submit {
