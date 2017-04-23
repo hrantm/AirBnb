@@ -25,7 +25,8 @@ class Greeting extends React.Component {
             <img src='https://res.cloudinary.com/harvey93/image/upload/v1490387034/logo_zbyo8x.png' className='logo-image'/>
         </div>
         <div className='buttons'>
-          <h4 className='profile-name'>Hello, {currentUser.fname}!</h4>
+          <h4 className='profile-name'>Hello, </h4>
+          <h4 className='profile-name pink-name'>{currentUser.fname}!</h4>
           <button className='auth-button' onClick={() => hashHistory.push(`/${currentUser.id}/bookings`)}>Bookings</button>
           <button className='auth-button' onClick={this.logout}>Sign Out</button>
         </div>

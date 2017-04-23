@@ -22,7 +22,6 @@ class OfficeDetails extends React.Component {
   }
 
   render(){
-    console.log(this.props);
     return(
       <div className='office-detail-container'>
         <div className='image-container'>
@@ -45,7 +44,7 @@ class OfficeDetails extends React.Component {
             <BookingFormContainer office={this.props.offices}/>
         </div>
         <div className='reviews-and-form'>
-          <ReviewContainer office={this.props.routeParams.office_id}/>
+          <ReviewContainer avg_rating={this.props.offices.average_rating} office={this.props.routeParams.office_id}/>
           <ReviewFormContainer office={this.props.routeParams.office_id}/>
         </div>
       </div>
