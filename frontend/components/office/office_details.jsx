@@ -22,6 +22,7 @@ class OfficeDetails extends React.Component {
   }
 
   render(){
+    console.log(this.props);
     return(
       <div className='office-detail-container'>
         <div className='image-container'>
