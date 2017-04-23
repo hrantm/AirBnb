@@ -19,7 +19,10 @@ class Office extends React.Component {
         <ul className='image-list'>
         {this.props.offices.map(office => (
           <li className='office-li' onClick={() => hashHistory.push(`/offices/${office.id}`)}>
-            <h1 className='office-price'>${office.price} {office.location}</h1>
+            <div className='office-title-dive'>
+              <h1 className='office-price'>${office.price}</h1>
+              <h1 className='office-location'>{office.location}</h1>
+            </div>
             <img className='office-img' src={office.image_url}/>
           </li>
         ))}

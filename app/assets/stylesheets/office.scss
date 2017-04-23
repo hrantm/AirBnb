@@ -36,8 +36,20 @@
 
 .office-price {
   padding: 5px;
+  font-weight: bold;
+  color: #2f4f4f
+}
+
+.office-location {
+  padding: 5px;
+  color: #2f4f4f
 }
 
 .home-div {
   padding-bottom: 30px;
+}
+
+.office-title-dive {
+  display: flex;
+
 }
