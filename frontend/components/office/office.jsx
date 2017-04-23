@@ -14,6 +14,7 @@ class Office extends React.Component {
   }
 
   render(){
+    console.log(this.props);
     return(
       <div >
         <ul className='image-list'>
