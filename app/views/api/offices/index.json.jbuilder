@@ -12,4 +12,5 @@ json.array! @offices do |office|
   json.about_this office.about_this
   json.guest_limit office.guest_limit
   json.desks office.desks
+  json.average_rating office.average_rating
 end
