@@ -11,7 +11,7 @@ class Office extends React.Component {
 
   componentDidMount(){
     if (this.props.pageType === 'home') {
-      this.props.fetchOffices({office: {show_amount: 9}});
+      this.props.fetchOffices({office: {show_amount: 12}});
     }
   }
 

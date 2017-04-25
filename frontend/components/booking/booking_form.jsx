@@ -104,14 +104,16 @@ class BookingForm extends React.Component {
         <div></div>
         <h1>Per Day</h1>
       </div>
-      <DateRangePicker
-        startDate={this.state.startDate}
-        endDate={this.state.endDate}
-        focusedInput={this.state.focus}
-        onDatesChange={({startDate, endDate}) => { this.setState({ startDate, endDate }); }}
-        onFocusChange={this.handleFocusChange}
-        minimumNights={0}
-      />
+      <div className='date-picker-div-booking'>
+        <DateRangePicker
+          startDate={this.state.startDate}
+          endDate={this.state.endDate}
+          focusedInput={this.state.focus}
+          onDatesChange={({startDate, endDate}) => { this.setState({ startDate, endDate }); }}
+          onFocusChange={this.handleFocusChange}
+          minimumNights={0}
+        />
+      </div>
     {this.calcCost()}
     <div className='booking-submit-container'>
       <input className='booking-form-submit' type='submit' value='Book Now!' disabled={!this.props.currentUser}/>
