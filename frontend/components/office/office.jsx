@@ -20,8 +20,8 @@ class Office extends React.Component {
     return(
       <div >
         <ul className='image-list'>
-        {this.props.offices.map(office => (
-          <li className='office-li' onClick={() => hashHistory.push(`/offices/${office.id}`)}>
+        {this.props.offices.map((office, idx) => (
+          <li key={idx} className='office-li' onClick={() => hashHistory.push(`/offices/${office.id}`)}>
             <div className='office-title-div-container'>
               <div className='office-title-div'>
                 <h1 className='office-price'>${office.price}</h1>

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     Modal.setAppElement(document.body);
     ReactDOM.render(<Root store={store}/>, root);
-    // window.store = store;
+    window.store = store;
 });
 
 //{email: 'testsad', password: 'testing123', fname: 'f', lname: 'l'}
